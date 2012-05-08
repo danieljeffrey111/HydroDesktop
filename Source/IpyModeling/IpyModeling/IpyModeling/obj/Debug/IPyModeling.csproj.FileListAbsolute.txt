@@ -8,3 +8,8 @@ C:\VB\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.pdb
 C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\ResolveAssemblyReference.cache
 C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.dll
 C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.pdb
+C:\hydrodesktop_7e935c516515\Source\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.dll
+C:\hydrodesktop_7e935c516515\Source\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.pdb
+C:\hydrodesktop_7e935c516515\Source\IpyModeling\IpyModeling\IpyModeling\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.dll
+C:\hydrodesktop_7e935c516515\Source\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.pdb

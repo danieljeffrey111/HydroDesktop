@@ -16,3 +16,10 @@ C:\VB\IpyModelingControl\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\VB\IpyModelingControl\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\VB\IpyModelingControl\obj\x86\Debug\IpyModelingControl.dll
 C:\VB\IpyModelingControl\obj\x86\Debug\IpyModelingControl.pdb
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IPyModelingControl.IPyGBMControl.resources
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IPyModelingControl.IPyModelingControl.resources
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IPyModelingControl.IPyPLSControl.resources
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IpyModelingControl.pdb

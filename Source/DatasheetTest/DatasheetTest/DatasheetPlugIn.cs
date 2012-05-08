@@ -170,7 +170,7 @@ namespace DatasheetTest
         {
             if (e.ActivePanelKey == kDataSheet)
             {
-                App.DockManager.SelectPanel("TestSeriesView");
+                App.DockManager.SelectPanel("datasheetSeriesView");
                 App.HeaderControl.SelectRoot(kDataSheet);
             }
         }

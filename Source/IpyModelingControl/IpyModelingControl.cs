@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -6,7 +7,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.IO;
+using DotSpatial.Controls;
+using HydroDesktop.Interfaces;
+using WeifenLuo.WinFormsUI.Docking;
 using System.Globalization;
 using IPyModeling;
 

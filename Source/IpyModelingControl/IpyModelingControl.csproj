@@ -34,16 +34,43 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
-    <OutputPath>bin\x86\Debug\</OutputPath>
+    <OutputPath>..\..\bin\debug\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotSpatial.Controls">
+      <HintPath>..\..\Binaries\DotSpatial.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data">
+      <HintPath>..\..\Binaries\DotSpatial.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data.Forms">
+      <HintPath>..\..\Binaries\DotSpatial.Data.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions">
+      <HintPath>..\..\Binaries\DotSpatial.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Configuration">
+      <HintPath>..\..\Binaries\HydroDesktop.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Data">
+      <HintPath>..\..\Binaries\HydroDesktop.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Interfaces">
+      <HintPath>..\..\Binaries\HydroDesktop.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="LogUtilities">
+      <HintPath>..\..\..\bin\debug\LogUtilities.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +80,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="VBTools">
       <HintPath>..\..\..\VB\VBTools\VBTools\obj\Release\VBTools.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\VB\bin\debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +97,12 @@
     </Compile>
     <Compile Include="IPyModelingControl.Designer.cs">
       <DependentUpon>IPyModelingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPyPLSPlugIn.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SerializableState.cs" />
     <Compile Include="IPyModelingEvents.cs" />
@@ -88,6 +124,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IPyPLSControl.resx">
       <DependentUpon>IPyPLSControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

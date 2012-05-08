@@ -48,8 +48,9 @@
     <Reference Include="HydroDesktop.Configuration">
       <HintPath>C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="HydroDesktop.Data">
-      <HintPath>C:\VirtualBeach3.0\Externals\HydroDesktop\HydroDesktop.Data.dll</HintPath>
+    <Reference Include="HydroDesktop.Data, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\HydroDesktop.Data.dll</HintPath>
     </Reference>
     <Reference Include="HydroDesktop.Interfaces">
       <HintPath>C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Interfaces.dll</HintPath>
@@ -77,6 +78,7 @@
     </Reference>
     <Reference Include="WeifenLuo.WinFormsUI.Docking">
       <HintPath>..\..\..\..\VB\bin\debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="ZedGraph">
       <HintPath>C:\VB\SupportProjects\zedgraph\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
