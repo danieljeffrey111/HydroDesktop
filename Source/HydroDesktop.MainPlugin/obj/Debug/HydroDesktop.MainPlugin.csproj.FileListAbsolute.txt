@@ -1,0 +1,9 @@
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.MainPlugin.dll
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.MainPlugin.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\HydroDesktop.Main.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\HydroDesktop.Main.WelcomeScreen.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\HydroDesktop.MainPlugin.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainPlugin\obj\Debug\HydroDesktop.MainPlugin.pdb

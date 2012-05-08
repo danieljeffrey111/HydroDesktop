@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HydroDesktop.Common</name>
+    </assembly>
+    <members>
+        <member name="T:HydroDesktop.Common.Tools.EnumHelper">
+            <summary>
+            Helper for enums
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.EnumHelper.Description(System.Enum)">
+            <summary>
+            Get description from Enum Value
+            </summary>
+            <param name="enumValue">Enum value.</param>
+            <returns>Description of value.</returns>
+        </member>
+        <member name="T:HydroDesktop.Common.Tools.SymbologyHelper">
+            <summary>
+            Contains extension methods for DotSpatial.Symbology namespace
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.SymbologyHelper.AddMenuItem(DotSpatial.Symbology.SymbologyMenuItem,System.String,System.EventHandler)">
+            <summary>
+            Add sub-menu item into parent menu item.
+            </summary>
+            <param name="parent">Parent menu item.</param>
+            <param name="menuItemName">Menu item to add.</param>
+            <param name="handler">Click event handler.</param>
+        </member>
+        <member name="T:HydroDesktop.Common.Tools.AppManagerHelper">
+            <summary>
+            Contains extension methods for <see cref="T:DotSpatial.Controls.AppManager"/>
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.AppManagerHelper.GetExtension``1(DotSpatial.Controls.AppManager)">
+            <summary>
+            Get active extension by it's type.
+            </summary>
+            <typeparam name="T">Extension type</typeparam>
+            <param name="appManager">App manager</param>
+            <returns>Instance of extension, or null (if extension not found).</returns>
+        </member>
+        <member name="T:HydroDesktop.Common.Controls.DelimiterSelector">
+            <summary>
+            Delimiter selector allows to select delimiter
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Controls.DelimiterSelector.#ctor">
+            <summary>
+            Create new instance of <see cref="T:HydroDesktop.Common.Controls.DelimiterSelector"/>
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.Common.Controls.DelimiterSelector.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Controls.DelimiterSelector.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HydroDesktop.Common.Controls.DelimiterSelector.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:HydroDesktop.Common.Controls.DelimiterSelector.CurrentDelimiterChanged">
+            <summary>
+            Raised when <see cref="P:HydroDesktop.Common.Controls.DelimiterSelector.CurrentDelimiter"/> changed.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Common.Controls.DelimiterSelector.CurrentDelimiter">
+            <summary>
+            Current Delimiter
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Common.ObservableObject`1">
+            <summary>
+            Base class for classes which implements INotifyPropertyChanged
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HydroDesktop.Common.ObservableObject`1.NotifyPropertyChanged(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Called when [property changed].
+            </summary>
+            <param name="property">The property.</param>
+        </member>
+        <member name="E:HydroDesktop.Common.ObservableObject`1.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Common.Tools.ControlHelper">
+            <summary>
+            Helper for <see cref="T:System.Windows.Forms.Control"/>
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.ControlHelper.UIThread(System.Windows.Forms.Control,System.Action)">
+            <summary>
+            Executes the Action asynchronously on the UI thread, does not block execution on the calling thread.
+            </summary>
+            <param name="control">Control</param>
+            <param name="code">Action</param>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.ControlHelper.AddBinding``2(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Linq.Expressions.Expression{System.Func{``1,System.Object}})">
+            <summary>
+            Add binding to control
+            </summary>
+            <typeparam name="T">Type of control</typeparam>
+            <typeparam name="TS">Type of object to bind</typeparam>
+            <param name="control">Control</param>
+            <param name="controlProperty">Expression that returns control property to bind</param>
+            <param name="source">Bind source</param>
+            <param name="sourceProperty">Expression that returns source property to bind</param>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.ControlHelper.IsDesignMode(System.Windows.Forms.Control)">
+            <summary>
+            Detecting Design Mode In Visual Studio
+            </summary>
+            <param name="control">Control</param>
+            <returns>True - Design Mode, otherwise - False.</returns>
+        </member>
+        <member name="T:Hydrodesktop.Common.LayerConstants">
+            <summary>
+            Contains some constants related to layers
+            </summary>
+        </member>
+        <member name="P:Hydrodesktop.Common.LayerConstants.SearchGroupName">
+            <summary>
+            Name of search results layer group (Data Sites layer)
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Common.Tools.NameHelper">
+            <summary>
+            Helper to work with properties and names
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.NameHelper.Name``2(System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.Tools.NameHelper.Name``1(System.Linq.Expressions.Expression{System.Func{``0}},System.Boolean)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Common.IProgressHandler">
+            <summary>
+            Interface for progressing when long operations are executed
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.IProgressHandler.ReportProgress(System.Int32,System.Object)">
+            <summary>
+            Report progress
+            </summary>
+            <param name="percentage">Percentage of progress</param>
+            <param name="state">State of progress</param>
+        </member>
+        <member name="M:HydroDesktop.Common.IProgressHandler.CheckForCancel">
+            <summary>
+            Check for cancel
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Common.IProgressHandler.ReportMessage(System.String)">
+            <summary>
+            Report any custom message
+            </summary>
+            <param name="message">Message to report</param>
+        </member>
+        <member name="T:Hydrodesktop.Common.DataSitesLayerTools">
+            <summary>
+            Tools for 'Data Sites Layer'
+            </summary>
+        </member>
+        <member name="M:Hydrodesktop.Common.DataSitesLayerTools.GetDataSitesLayer(DotSpatial.Controls.IMap,System.Boolean)">
+            <summary>
+            Get Data Sites Layer for given map
+            </summary>
+            <param name="map">Map</param>
+            <param name="createIfNotExists">Create data sites layer, if it not exists.</param>
+            <returns>Data Sites Layer.</returns>
+        </member>
+        <member name="T:HydroDesktop.Common.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Common.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Common.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Common.Properties.Resources.SearchGroupName">
+            <summary>
+              Looks up a localized string similar to Data Sites.
+            </summary>
+        </member>
+    </members>
+</doc>

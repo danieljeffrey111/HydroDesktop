@@ -1,0 +1,13 @@
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.SeriesView.dll
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.SeriesView.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.DisplayOptionsForm.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.FilterDataSeries.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.frmComplexSelection.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.frmProperty.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\SeriesView.SeriesSelector.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\HydroDesktop.SeriesView.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.SeriesView\obj\Debug\HydroDesktop.SeriesView.pdb

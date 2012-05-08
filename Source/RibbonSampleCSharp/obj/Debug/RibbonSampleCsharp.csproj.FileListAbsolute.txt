@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\RibbonSampleCSharp.Images.resources
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\RibbonSamplePlugin.MyUserControl.resources
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\RibbonSampleCSharp.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\GenerateResource.write.1.tlog
+C:\Binaries\Plugins\RibbonSamplePlugin\RibbonSampleCSharp.dll
+C:\Binaries\Plugins\RibbonSamplePlugin\RibbonSampleCSharp.pdb
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\RibbonSampleCSharp.dll
+C:\hydrodesktop_7e935c516515\Source\RibbonSampleCSharp\obj\Debug\RibbonSampleCSharp.pdb

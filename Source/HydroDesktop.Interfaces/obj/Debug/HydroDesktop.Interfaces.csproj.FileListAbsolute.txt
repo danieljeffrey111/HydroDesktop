@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Interfaces.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Interfaces.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Interfaces\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Interfaces\obj\Debug\HydroDesktop.Interfaces.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Interfaces\obj\Debug\HydroDesktop.Interfaces.pdb

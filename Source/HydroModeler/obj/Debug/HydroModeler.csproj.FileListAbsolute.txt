@@ -1,0 +1,16 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroModeler\HydroModeler.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroModeler\HydroModeler.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroModeler\HydroModeler.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\HydroModeler.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.resources
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\HydroModeler.dll
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\obj\Debug\HydroModeler.pdb
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroModeler\HydroModeler.XML

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GraphView
+</name>
+</assembly>
+<members>
+<member name="M:BoxPlot.#ctor">
+	<summary>
+ 'creates a new instance of the class, initializes member variables
+ </summary>
+	<remarks></remarks>
+</member><member name="M:BoxPlot.AddOutlier_Lower(System.Double)">
+	<summary>
+ adds a lower outlier value to m_outliers_Lower, updates m_numOutliers_Lower
+ </summary>
+	<param name="value">the lower outlier value to add</param>
+	<remarks></remarks>
+</member><member name="M:BoxPlot.AddOutlier_Upper(System.Double)">
+	<summary>
+ add an upper outlier value to m_outliers_Upper, update m_numOutliers_Upper
+ </summary>
+	<param name="value">the upper outlier value to add</param>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.xValue">
+	<summary>
+ gets or sets the xValue for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.yValue">
+	<summary>
+ gets or sets the yValue for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.mean">
+	<summary>
+ gets or sets the mean value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.median">
+	<summary>
+ gets or sets the median value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.quantile_25th">
+	<summary>
+ gets or sets the 25th quantile value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.quantile_75th">
+	<summary>
+ gets or sets the 75th quantile value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.adjacentLevel_Lower">
+	<summary>
+ gets or sets the lower whisker (Lower adjacent level) value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.adjacentLevel_Upper">
+	<summary>
+ gets or sets the upper whisker (Upper adjacent level) value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.confidenceInterval95_Lower">
+	<summary>
+ gets or sets the Lower 95% Confidence Interval value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.confidenceInterval95_Upper">
+	<summary>
+ gets or sets the Upper 95% Confidence Interval value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.confidenceLimit95_Lower">
+	<summary>
+ gets or sets the Lower 95% Confidence Limit value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.confidenceLimit95_Upper">
+	<summary>
+ gets or sets the Upper 95% Confidnece Limit value for the boxplot
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.numOutliers_Lower">
+	<summary>
+ gets the number of lower outliers in m_outliers_Lower
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.numOutliers_Upper">
+	<summary>
+ gets the number of upper outliers in m_outliers_Upper
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.collectionOfOutliers_Lower">
+	<summary>
+ gets the collection of lower outliers
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.collectionOfOutliers_Upper">
+	<summary>
+ gets the collection of upper outliers
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.outlierValue_Lower(System.Int32)">
+	<summary>
+ gets or sets the lower outlier value at the given index
+ </summary>
+	<param name="index">the index into m_outliers_Lower to get or set the value for</param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:BoxPlot.outlierValue_Upper(System.Int32)">
+	<summary>
+ gets or sets the upper outlier value at the given index
+ </summary>
+	<param name="index">the index into m_outliers_Upper to get or set the value for</param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:BoxPlot">
+	<summary>
+ Used to calculate statistics used in box plots
+ </summary>
+	<remarks></remarks>
+</member><member name="P:My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\GeostatisticalTool\HydroDestkop.GetGeostatisticalTool.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\GeostatisticalTool\HydroDestkop.GetGeostatisticalTool.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDestkop.GetGeostatisticalTool\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDestkop.GetGeostatisticalTool\obj\Debug\HydroDestkop.GetGeostatisticalTool.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDestkop.GetGeostatisticalTool\obj\Debug\HydroDestkop.GetGeostatisticalTool.pdb

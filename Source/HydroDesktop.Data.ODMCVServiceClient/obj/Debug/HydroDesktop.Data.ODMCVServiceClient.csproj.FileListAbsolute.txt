@@ -1,0 +1,7 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.ODMCVServiceClient.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.ODMCVServiceClient.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.ODMCVServiceClient.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data.ODMCVServiceClient\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data.ODMCVServiceClient\obj\Debug\HydroDesktop.Data.ODMCVServiceClient.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data.ODMCVServiceClient\obj\Debug\HydroDesktop.Data.ODMCVServiceClient.pdb
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.ODMCVServiceClient.XML

@@ -1,0 +1,11 @@
+g:\Visual Studio 2008\VirtualBeach2.0\bin\release\VBStatistics.dll
+g:\Visual Studio 2008\VirtualBeach2.0\bin\release\VBStatistics.pdb
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\ResolveAssemblyReference.cache
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\VBStatistics.dll
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\VBStatistics.pdb
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\ResolveAssemblyReference.cache
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\VBStatistics.dll.licenses
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\VBStatistics.pdb
+G:\VirtualBeach2.0\bin\release\VBStatistics.dll
+G:\VirtualBeach2.0\bin\release\VBStatistics.pdb
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Release\VBStatistics.dll

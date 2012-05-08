@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HelpTab\HelpTab.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HelpTab\HelpTab.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HelpTab\HelpTab.pdb
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\HelpTab.AboutBox.resources
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\HelpTab.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\HelpTab.dll
+C:\hydrodesktop_7e935c516515\Source\HelpTab\HelpTab\obj\Debug\HelpTab.pdb

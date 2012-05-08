@@ -1,0 +1,13 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroR\HydroR_1.2.tar.gz
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroR\HydroR.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroR\HydroR.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\HydroR\HydroR.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.cRCommandView.resources
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.Controls.REditor.resources
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.frmInstallR.resources
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.dll
+C:\hydrodesktop_7e935c516515\Source\HydroR\obj\Debug\HydroR.pdb

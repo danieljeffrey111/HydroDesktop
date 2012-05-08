@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DotSpatial.Plugins.WebMap\HydroDesktop.GetWebMap.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DotSpatial.Plugins.WebMap\HydroDesktop.GetWebMap.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetWebMap\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetWebMap\obj\Debug\HydroDesktop.GetWebMap.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetWebMap\obj\Debug\HydroDesktop.GetWebMap.pdb

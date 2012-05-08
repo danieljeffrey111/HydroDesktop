@@ -1,0 +1,13 @@
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\bin\x86\Debug\VBStatistics.dll
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\bin\x86\Debug\VBStatistics.pdb
+G:\VirtualBeach2.0\bin\Debug\VBStatistics.dll
+G:\VirtualBeach2.0\bin\Debug\VBStatistics.pdb
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\x86\Debug\VBStatistics.dll.licenses
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\x86\Debug\VBStatistics.dll
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\x86\Debug\VBStatistics.pdb
+C:\hydrodesktop_7e935c516515\Source\VBStatistics\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\VBStatistics\obj\x86\Debug\VBStatistics.dll
+C:\hydrodesktop_7e935c516515\Source\VBStatistics\obj\x86\Debug\VBStatistics.pdb
+C:\hydrodesktop_7e935c516515\bin\Debug\VBStatistics.dll
+C:\hydrodesktop_7e935c516515\bin\Debug\VBStatistics.pdb

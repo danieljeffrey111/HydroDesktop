@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\Utilities\OpenMI\gui\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\Utilities\OpenMI\gui\Core\obj\Debug\Oatc.OpenMI.Gui.Core.dll
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\Utilities\OpenMI\gui\Core\obj\Debug\Oatc.OpenMI.Gui.Core.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\Utilities\OpenMI\Oatc.OpenMI.Gui.Core.dll
+C:\hydrodesktop_7e935c516515\Source\HydroModeler\Utilities\OpenMI\Oatc.OpenMI.Gui.Core.pdb

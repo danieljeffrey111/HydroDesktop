@@ -1,0 +1,12 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\TableView\TableView.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\TableView\TableView.pdb
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.ChangeDatabaseForm.resources
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.cTableView.resources
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.DataGridViewNavigator.resources
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.DeleteThemeForm.resources
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.dll
+C:\hydrodesktop_7e935c516515\Source\TableView\obj\Debug\TableView.pdb

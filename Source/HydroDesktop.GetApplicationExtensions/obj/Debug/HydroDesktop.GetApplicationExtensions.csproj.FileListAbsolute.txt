@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.ExtensionLoader.dll
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.ExtensionLoader.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetApplicationExtensions\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetApplicationExtensions\obj\Debug\HydroDesktop.ExtensionLoader.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetApplicationExtensions\obj\Debug\HydroDesktop.ExtensionLoader.pdb

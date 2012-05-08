@@ -1,0 +1,12 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\MetadataFetcher\MetadataFetcher.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\MetadataFetcher\MetadataFetcher.pdb
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\HydroDesktop.MetadataFetcher.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\HydroDesktop.MetadataFetcher.Forms.AddServiceFromHydroServerForm.resources
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\HydroDesktop.MetadataFetcher.Forms.AddServiceFromHydroPortalForm.resources
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\HydroDesktop.MetadataFetcher.Forms.AddServicesForm.resources
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\HydroDesktop.MetadataFetcher.Forms.MainForm.resources
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\MetadataFetcher.dll
+C:\hydrodesktop_7e935c516515\Source\MetadataFetcher\obj\Debug\MetadataFetcher.pdb

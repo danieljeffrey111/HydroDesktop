@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HydroModeler</name>
+    </assembly>
+    <members>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog">
+            <summary>
+            Summary description for ModelDialog.
+            </summary>
+        </member>
+        <member name="F:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.#ctor">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog">ModelDialog</see> dialog.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.PopulateDialog(System.Collections.ArrayList,System.String)">
+            <summary>
+            Populates this dialog with models.
+            </summary>
+            <param name="uiModels">List of models, ie. <see cref="T:Oatc.OpenMI.Gui.Core.UIModel">UIModel</see> objects.</param>
+            <param name="modelID">ID of the model to be selected.</param>		
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.PopulateDialog(System.Collections.ArrayList)">
+            <summary>
+            Populates this dialog with models.
+            </summary>
+            <param name="uiModels">List of models, ie. <see cref="T:Oatc.OpenMI.Gui.Core.UIModel">UIModel</see> objects.</param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ModelDialog.SelectModel(System.String)">
+            <summary>
+            Selects one model to be shown in dialog.
+            </summary>
+            <param name="modelID">ID of model to be selected.</param>		
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.#ctor(DotSpatial.Controls.AppManager,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab">mainTab</see> window.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.ProceedCommandLineArgs(System.String[])">
+            <summary>
+            Method is used to start application.
+            </summary>
+            <param name="args">Command-line arguments.</param>
+            <remarks>Method proceeds all command-line args ("/opr %", "/reg", ...)
+            and perform requested actions.</remarks>		
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.OpenOprFile(System.String)">
+            <summary>
+            Opens composition from OPR file.
+            </summary>
+            <param name="fullPath">Full path to OPR file.</param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.AddModel(System.String)">
+            <summary>
+            Adds one model to composition.
+            </summary>
+            <param name="fullPath">Full path to OMI file.</param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.CompositionUpdateArea">
+            <summary>
+            Method calculates size of composition area and it's scroll-bars according to 
+            position of models' rectangles and size of the window.
+            </summary>
+            <remarks>
+            This method is called if some model has moved, main window has resized or if new file was opened.
+            </remarks>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.CompositionCenterView">
+            <summary>
+            Sets composition box to center.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.CheckIfSaved">
+            <summary>
+            If composition should be saved, this method shows message box, where the user can do it, can
+            ignore it or can cancel current operation.
+            </summary>
+            <returns>Returns <c>true</c> if current operation can continue, or <c>false</c>
+            if user pressed cancel button.</returns>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.compositionBox_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Stops the selected model from moving
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.compositionBox_MouseEnter(System.Object,System.EventArgs)">
+            <summary>
+            Change the cursor into pan mode when it leaves the composition box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.compositionBox_MouseLeave(System.Object,System.EventArgs)">
+            <summary>
+            change the cursor back to default mode when it leaves the composition box
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.Main(System.String[])">
+            <summary>
+            The main entry point for the application.
+            </summary>		
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.InitializeComponentRibbon">
+            <summary>
+            Initializes the HydoDesktop Ribbon.  Also calls the three methods below.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.InitializeOldMenu">
+            <summary>
+            Initializes the orignal OpenMI Editor menu and variables
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.InitializeContext">
+            <summary>
+            Initializes the context menus for the HydroModeler Model window and File Browser window
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.InitializeComposition">
+            <summary>
+            Initializes the HydroModeler composition items, including the modeler window, file browser, and properties window.
+            </summary>
+        </member>
+        <member name="F:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.contextConfigurationAdd">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Oatc.OpenMI.Gui.ConfigurationEditor.mainTab.Ispan">
+            <summary>
+            Sets the ispan field.  This is used to determine if panning will be performed when the user clicks in the composition box.
+            </summary>
+        </member>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.MyListView">
+            <summary>
+            This class is necessary to create and eventhandler for listview scrolling
+            </summary>
+        </member>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox">
+            <summary>
+            Summary description for AboutBox.
+            </summary>
+        </member>
+        <member name="F:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox.#ctor">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox">AboutBox</see> dialog.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.AboutBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog">
+            <summary>
+            Summary description for ConnectionDialog.
+            </summary>
+        </member>
+        <member name="F:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog._propertyManagerCache">
+            <summary>
+            This Hashtable is used to store already constructed PropertyManagers of 
+            selected object. Its key is selected object, value is corresponding PropertyManager
+            or <c>null</c> if it not exists at the time.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog.#ctor">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog">ConnectionDialog</see> dialog.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog.PopulateDialog(Oatc.OpenMI.Gui.Core.UIConnection,System.Int32)">
+            <summary>
+            Populates this <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog">ConnectionDialog</see> with specific connection.
+            </summary>
+            <param name="uilink"></param>
+            <param name="startingLinkID"></param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.ConnectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties">
+            <summary>
+            Summary description for RunProperties.
+            </summary>
+        </member>
+        <member name="F:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.#ctor">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties">RunProperties</see> dialog.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.PopulateDialog(Oatc.OpenMI.Gui.Core.CompositionManager,System.Boolean)">
+            <summary>
+            Populates this dialog with specific composition.
+            </summary>
+            <param name="composition">Composition to be used for dialog.</param>
+            <param name="initialTriggerInvokeTime">
+            If <c>true</c>, the <see cref="P:Oatc.OpenMI.Gui.Core.CompositionManager.TriggerInvokeTime">CompositionManager.TriggerInvokeTime</see>
+            is set to latest overlapping time of time horizons of all models. Typically this is used
+            when this dialog is showed for the first time.</param>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunProperties.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HydroModeler.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HydroModeler.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HydroModeler.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:HydroModeler.Properties.Resources.startpath">
+            <summary>
+              Looks up a localized string similar to ./Plugins/HydroModeler/hydromodeler_example_configurations.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.Program.Deactivate">
+            <summary>
+            Occurs when the HydroModeler plugin is unloaded
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.Program.Activate">
+            <summary>
+            Occurs when the HydroModeler plugin is loaded
+            </summary>
+        </member>
+        <member name="T:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox">
+            <summary>
+            Summary description for RunBox.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.#ctor(Oatc.OpenMI.Gui.ConfigurationEditor.mainTab)">
+            <summary>
+            Creates a new instance of <see cref="T:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox">RunBox</see> dialog.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.PopuplateDialog(Oatc.OpenMI.Gui.Core.CompositionManager,OpenMI.Standard.IListener)">
+            <summary>
+            Populates this dialog with specified composition and proxy listener.
+            </summary>
+            <param name="composition">Composition which simulation is to be run.</param>
+            <param name="listener">Listener which is used for monitoring simulation.</param>
+            <remarks>
+            Simulation is fired after this dialog is showed. That's because if
+            simulation runs in same thread we won't be able to show it another way.
+            We determine whether simulation runs in same thread using
+            <see cref="P:Oatc.OpenMI.Gui.Core.CompositionManager.RunInSameThread">CompositionManager.RunInSameThread</see> property.
+            </remarks>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.StartSimulation">
+            <summary>
+            Method fires simulation if not already running.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.ProgressBarRun">
+            <summary>
+            Progress bar showing simulation progress.
+            </summary>
+            <remarks>This property is used to initialize <see cref="T:Oatc.OpenMI.Gui.Core.ProgressBarListener">ProgressBarListener</see>.</remarks>
+        </member>
+        <member name="P:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.ListViewEvents">
+            <summary>
+            Listview showing events during simulation.
+            </summary>
+            <remarks>This property is used to initialize <see cref="T:Oatc.OpenMI.Gui.Core.ListViewListener">ListViewListener</see>.</remarks>
+        </member>
+        <member name="P:Oatc.OpenMI.Gui.ConfigurationEditor.RunBox.Timer">
+            <summary>
+            Timer used to initiate sending of events to UI listeners.
+            </summary>
+        </member>
+    </members>
+</doc>

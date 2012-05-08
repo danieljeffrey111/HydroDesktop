@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExcelExtension</name>
+    </assembly>
+    <members>
+        <member name="T:ExcelExtension.ExcelVectorProvider">
+            <summary>
+            Excel Vector Provider. It let converts data from MS Excel files into FeatureSet.
+            Points coordinates msut be in Latitude/Longitude columns.
+            </summary>
+        </member>
+        <member name="M:ExcelExtension.ExcelVectorProvider.Open(System.String)">
+            <summary>
+            Opens the specified file
+            </summary>
+            <param name="fileName">Path to file.</param>
+            <returns>Feature set from file data.</returns>
+            <exception cref="T:System.Exception">Throws if no sheets in the file, or 
+            Latitude or Longitude column not found.</exception>
+        </member>
+        <member name="T:ExcelExtension.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ExcelExtension.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ExcelExtension.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ExcelExtension.Properties.Resources.wgs_84_esri_string">
+            <summary>
+              Looks up a localized string similar to GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137,298.257223562997]],PRIMEM[&quot;Greenwich&quot;,0],UNIT[&quot;Degree&quot;,0.0174532925199433]].
+            </summary>
+        </member>
+    </members>
+</doc>

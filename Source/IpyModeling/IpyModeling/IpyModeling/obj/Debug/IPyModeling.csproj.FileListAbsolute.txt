@@ -1,0 +1,10 @@
+C:\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.dll
+C:\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.pdb
+C:\IpyModeling\IpyModeling\IpyModeling\obj\Debug\ResolveAssemblyReference.cache
+C:\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.dll
+C:\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.pdb
+C:\VB\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.dll
+C:\VB\IpyModeling\IpyModeling\IpyModeling\bin\Debug\IpyModeling.pdb
+C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\ResolveAssemblyReference.cache
+C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.dll
+C:\VB\IpyModeling\IpyModeling\IpyModeling\obj\Debug\IpyModeling.pdb

@@ -1,0 +1,8 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataAggregation\DataAggregation.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataAggregation\DataAggregation.pdb
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\DataAggregation.AggregationSettingsDialog.resources
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\DataAggregation.dll
+C:\hydrodesktop_7e935c516515\Source\DataAggregation\obj\Debug\DataAggregation.pdb

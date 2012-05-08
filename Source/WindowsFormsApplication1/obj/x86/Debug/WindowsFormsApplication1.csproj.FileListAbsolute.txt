@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\bin\Debug\RibbonSampleCSharp.dll
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\bin\Debug\RibbonSampleCSharp.pdb
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\hydrodesktop_7e935c516515\Source\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

@@ -1,0 +1,8 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.WebServices.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.WebServices.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\HydroDesktop.WebServices.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\HydroDesktop.WebServices.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.WebServices\obj\Debug\HydroDesktop.WebServices.pdb

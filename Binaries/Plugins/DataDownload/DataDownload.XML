@@ -1,0 +1,950 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataDownload</name>
+    </assembly>
+    <members>
+        <member name="T:HydroDesktop.DataDownload.LayerInformation.IServiceInfoExtractor">
+            <summary>
+            Provides methods to extract some service info
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.IServiceInfoExtractor.GetServiceDesciptionUrl(System.String)">
+            <summary>
+            Get service description URL by serviceUrl
+            </summary>
+            <param name="serviceUrl">ServiceUrl</param>
+            <returns>ServiceDesciptionUrl</returns>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.RedownloadControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.RedownloadControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.RedownloadControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.ClassConvertor">
+            <summary>
+            Converts classes from one type to another
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.ClassConvertor.ServiceInfoToOneSeriesDownloadInfo(HydroDesktop.DataDownload.LayerInformation.ServiceInfo)">
+            <summary>
+            Converts instance of ServiceInfo into OneSeriesDownloadInfo
+            </summary>
+            <param name="serviceInfo">Instance of ServiceInfo</param>
+            <returns>Instance of OneSeriesDownloadInfo</returns>
+            <exception cref="T:System.ArgumentNullException"><para>serviceInfo</para> must be not null.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.ClassConvertor.IFeatureToServiceInfo(DotSpatial.Data.IFeature,DotSpatial.Symbology.IFeatureLayer)">
+            <summary>
+            Converts instance of IFeature into ServiceInfo
+            </summary>
+            <param name="feature">Instance of IFeature</param>
+            <param name="layer">Layer</param>
+            <returns>Instance of ServiceInfo</returns>
+            <exception cref="T:System.ArgumentNullException"><para>feature</para> must be not null.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.ClassConvertor.IFeatureToOneSeriesDownloadInfo(DotSpatial.Data.IFeature,DotSpatial.Symbology.IFeatureLayer)">
+            <summary>
+            Converts instance of IFeature into OneSeriesDownloadInfo
+            </summary>
+            <param name="feature">Instance of IFeature</param>
+            <param name="layer">Layer</param>
+            <returns>Instance of OneSeriesDownloadInfo</returns>
+            <exception cref="T:System.ArgumentNullException"><para>feature</para> must be not null.</exception>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.Exceptions.DownloadXmlException">
+            <summary>
+            The exception that is thrown when downloading series from web services.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.Exceptions.NoSeriesFromXmlException">
+            <summary>
+            The exception that is thrown when no series found in downloaded xml file.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup">
+            <summary>
+            Represents a pop-up window.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Initializes a new instance of the <see cref="T:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup"/> class.
+            </summary>
+            <param name="content">The content of the pop-up.</param>
+            <remarks>
+            Pop-up will be disposed immediately after disposion of the content control.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="content"/> is <code>null</code>.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnVisibleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripItem.VisibleChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog box key.
+            </summary>
+            <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
+            <returns>
+            true if the key was processed by the control; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.UpdateRegion">
+            <summary>
+            Updates the pop-up region.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Show(System.Windows.Forms.Control)">
+            <summary>
+            Shows the pop-up window below the specified control.
+            </summary>
+            <param name="control">The control below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below the specified control, the pop-up control is shown above it.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="control"/> is <code>null</code>.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Show(System.Drawing.Rectangle)">
+            <summary>
+            Shows the pop-up window below the specified area.
+            </summary>
+            <param name="area">The area of desktop below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below specified area, the pop-up control is shown above it.
+            </remarks>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Show(System.Windows.Forms.Control,System.Drawing.Rectangle)">
+            <summary>
+            Shows the pop-up window below the specified area of the specified control.
+            </summary>
+            <param name="control">The control used to compute screen location of specified area.</param>
+            <param name="area">The area of control below which the pop-up will be shown.</param>
+            <remarks>
+            When there is no space below specified area, the pop-up control is shown above it.
+            </remarks>
+            <exception cref="T:System.ArgumentNullException"><paramref name="control"/> is <code>null</code>.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnSizeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.SizeChanged" /> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnOpening(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opening" /> event.
+            </summary>
+            <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnOpened(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Opened" /> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.OnClosed(System.Windows.Forms.ToolStripDropDownClosedEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.ToolStripDropDown.Closed"/> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.ToolStripDropDownClosedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Processes Windows messages.
+            </summary>
+            <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.ProcessResizing(System.Windows.Forms.Message@)">
+            <summary>
+            Processes the resizing messages.
+            </summary>
+            <param name="m">The message.</param>
+            <returns>true, if the WndProc method from the base class shouldn't be invoked.</returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.PaintSizeGrip(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the sizing grip.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Content">
+            <summary>
+            Gets the content of the pop-up.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.ShowingAnimation">
+            <summary>
+            Determines which animation to use while showing the pop-up window.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.HidingAnimation">
+            <summary>
+            Determines which animation to use while hiding the pop-up window.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.AnimationDuration">
+            <summary>
+            Determines the duration of the animation.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.FocusOnOpen">
+            <summary>
+            Gets or sets a value indicating whether the content should receive the focus after the pop-up has been opened.
+            </summary>
+            <value><c>true</c> if the content should be focused after the pop-up has been opened; otherwise, <c>false</c>.</value>
+            <remarks>If the FocusOnOpen property is set to <c>false</c>, then pop-up cannot use the fade effect.</remarks>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.AcceptAlt">
+            <summary>
+            Gets or sets a value indicating whether pressing the alt key should close the pop-up.
+            </summary>
+            <value><c>true</c> if pressing the alt key does not close the pop-up; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.Resizable">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup"/> is resizable.
+            </summary>
+            <value><c>true</c> if resizable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.NonInteractive">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="T:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup"></see> acts like a transparent windows (so it cannot be clicked).
+            </summary>
+            <value>
+            <c>true</c> if the popup is noninteractive; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.MinimumSize">
+            <summary>
+            Gets or sets a minimum size of the pop-up.
+            </summary>
+            <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.MaximumSize">
+            <summary>
+            Gets or sets a maximum size of the pop-up.
+            </summary>
+            <returns>An ordered pair of type <see cref="T:System.Drawing.Size" /> representing the width and height of a rectangle.</returns>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.PopupControl.Popup.CreateParams">
+            <summary>
+            Gets parameters of a new window.
+            </summary>
+            <returns>An object of type <see cref="T:System.Windows.Forms.CreateParams" /> used when creating a new window.</returns>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.SearchLayersProcessing.SearchLayerModifier">
+            <summary>
+            Class contains methods for modifying "search layer"
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.SearchLayersProcessing.SearchLayerModifier.IsSearchLayer(DotSpatial.Symbology.ILayer)">
+            <summary>
+            Check layer for search attributes
+            </summary>
+            <param name="layer">Layer to check</param>
+            <returns>True - layer is search layer, otherwise - false.</returns>
+            <exception cref="T:System.ArgumentNullException"><para>layer</para> must be not null.</exception>
+            <remarks>If layer is search layer, it can be casted at least to IFeatureLayer</remarks>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations">
+            <summary>
+            Types of animation of the pop-up window.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.None">
+            <summary>
+            Uses no animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.LeftToRight">
+            <summary>
+            Animates the window from left to right. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.RightToLeft">
+            <summary>
+            Animates the window from right to left. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.TopToBottom">
+            <summary>
+            Animates the window from top to bottom. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.BottomToTop">
+            <summary>
+            Animates the window from bottom to top. This flag can be used with roll or slide animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.Center">
+            <summary>
+            Makes the window appear to collapse inward if it is hiding or expand outward if the window is showing.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.Slide">
+            <summary>
+            Uses a slide animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.Blend">
+            <summary>
+            Uses a fade effect.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.Roll">
+            <summary>
+            Uses a roll animation.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.PopupControl.PopupAnimations.SystemDefault">
+            <summary>
+            Uses a default animation.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus">
+            <summary>
+            Statuses of DownloadInfo
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.Pending">
+            <summary>
+            Pending (awaitng to downloading)
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.Downloading">
+            <summary>
+            Downloading
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.Downloaded">
+            <summary>
+            Downloaded
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.Error">
+            <summary>
+            Some error occured during downloading or saving
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.Ok">
+            <summary>
+            Downloaded and saved without errors/warnings.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadInfoStatus.OkWithWarnings">
+            <summary>
+            Downloaded and saved with warnings.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.DownloadManagerUI">
+            <summary>
+            DownloadManager UI implementation
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManagerUI.#ctor(HydroDesktop.DataDownload.Downloading.DownloadManager)">
+            <summary>
+            Constructor of DownloadManagerUI
+            </summary>
+            <param name="manager">Instance of DownloadManager</param>
+            <exception cref="T:System.ArgumentNullException">manager must be not null</exception>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.Downloading.DownloadManagerUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManagerUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManagerUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Global.PluginEntryPoint">
+            <summary>
+            Reference to plug-in entry point
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Properties.Resources.Wgs84ProjectionString">
+            <summary>
+              Looks up a localized string similar to GEOGCS[&quot;GCS_WGS_1984&quot;,DATUM[&quot;D_WGS_1984&quot;,SPHEROID[&quot;WGS_1984&quot;,6378137,298.257223562997]],PRIMEM[&quot;Greenwich&quot;,0],UNIT[&quot;Degree&quot;,0.0174532925199433]].
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.IsInfoAlreadySetted(System.Collections.Generic.List{HydroDesktop.DataDownload.LayerInformation.ServiceInfoGroup})">
+            <summary>
+            Is info already setted on current tooltip
+            </summary>
+            <param name="info">Info to check</param>
+            <returns>True - setted, false - otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.SetInfo(System.Collections.Generic.IEnumerable{HydroDesktop.DataDownload.LayerInformation.ServiceInfoGroup})">
+            <summary>
+            Set info to current tooltip
+            </summary>
+            <param name="infos">Info to set</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="infos"/>must be not null</exception>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.StartDownloadArg">
+            <summary>
+            Class with information needed to call DownloadManager.Start()
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.StartDownloadArg.#ctor(System.Collections.Generic.IList{HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo},HydroDesktop.Interfaces.ObjectModel.Theme)">
+            <summary>
+            Constructor of DownloadArg
+            </summary>
+            <param name="downloadList">Collection of DownloadInfo</param>
+            <param name="dataTheme">Data theme</param>
+            <exception cref="T:System.ArgumentNullException">downloadList, dataTheme must be not null.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.StartDownloadArg.#ctor(System.Collections.Generic.IList{HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo},System.String)">
+            <summary>
+            Constructor of DownloadArg
+            </summary>
+            <param name="downloadList">Collection of DownloadInfo</param>
+            <param name="dataThemeName">Data theme name</param>
+            <exception cref="T:System.ArgumentNullException">downloadList, dataThemeName must be not null.</exception>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.StartDownloadArg.ItemsToDownload">
+            <summary>
+            Collection of all items to be downloaded.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.StartDownloadArg.DataTheme">
+            <summary>
+            Data theme.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.StartDownloadArg.Tag">
+            <summary>
+            Gets or sets object that contains additional data about StartDownloadArg
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo">
+            <summary>
+            This class is used to pass information required to download
+            data values using the WaterML GetValues() call
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo"/>
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.Wsdl">
+            <summary>
+            Service url
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.FullSiteCode">
+            <summary>
+            Site code
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.FullVariableCode">
+            <summary>
+            Variable code
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.SiteName">
+            <summary>
+            Site name
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.VariableName">
+            <summary>
+            Variable name
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.StartDate">
+            <summary>
+            Start date
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.EndDate">
+            <summary>
+            End date
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.Latitude">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.Longitude">
+            <summary>
+            Longitude
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.Status">
+            <summary>
+            Status of current item
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.StatusAsString">
+            <summary>
+            Status as string
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.DownloadTimeTaken">
+            <summary>
+            Time interval, taken to downloading
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.ErrorMessage">
+            <summary>
+            Error message. May be not null, if Status == DownloadInfoStatus.Error
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.FilesWithData">
+            <summary>
+            Collection of files with downloaded data series.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.EstimatedValuesCount">
+            <summary>
+            Estimated count of values
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo.SeriesDescription">
+            <summary>
+            Description of downloaded series
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.Exceptions.DataSeriesFromXmlException">
+            <summary>
+            The exception that is thrown when converting data series from xml.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.Downloader">
+            <summary>
+            Methods to download observation data from WaterML web services and save them to 
+            the ActualData database.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.#ctor">
+            <summary>
+            Default constructor with default connection string (from settings).
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.GetWsClientInstance(System.String)">
+            <summary>
+            Gets an instance of a WaterOneFlow client to be used with
+            the URL specified in the Download info. This instance is retrieved 
+            from the dictionary cache or created if necessary.
+            </summary>
+            <param name="wsdl">The URL of the web service main page</param>
+            <returns>the appropriate WaterOneFlow client</returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.DownloadXmlDataValues(HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo,HydroDesktop.WebServices.WaterOneFlow.IGetValuesProgressHandler)">
+            <summary>
+            This function is used to get the Values in XML Format based on the selected sites in the layer
+            </summary>
+            <param name="info">DownloadInfo</param>
+            <param name="getValueProgressHandler">Progress handler</param>
+            <returns>Collection of of the xml files with values</returns>
+            <exception cref="T:HydroDesktop.DataDownload.Downloading.Exceptions.DownloadXmlException">Some exception during get values from web service</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.DataSeriesFromXml(HydroDesktop.DataDownload.Downloading.OneSeriesDownloadInfo)">
+            <summary>
+            Converts the xml file to a data series object.
+            </summary>
+            <param name="dInfo">Download info</param>
+            <returns>Collection of the data series objects</returns>
+            <exception cref="T:HydroDesktop.DataDownload.Downloading.Exceptions.DataSeriesFromXmlException">Exception during parsing</exception>
+            <exception cref="T:HydroDesktop.DataDownload.Downloading.Exceptions.NoSeriesFromXmlException">Throws when no series in xml file</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.SaveDataSeries(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Theme,HydroDesktop.Interfaces.OverwriteOptions)">
+            <summary>
+            Creates a new DataSeries from a xml file and saves it to database.
+            This function uses the underlying NHibernate framework to
+            communicate with the database
+            </summary>
+            <param name="series">The data series to be saved</param>
+            <param name="theme">The theme associated with this data series</param>
+            <param name="overwriteOption">Option to how save series</param>
+            <returns>The number of saved data values</returns>
+            <exception cref="T:HydroDesktop.DataDownload.Downloading.Exceptions.SaveDataSeriesException">Something wrong during SaveDataSeries</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.Downloader.SaveDataSeries(System.Collections.Generic.IEnumerable{HydroDesktop.Interfaces.ObjectModel.Series},HydroDesktop.Interfaces.ObjectModel.Theme,HydroDesktop.Interfaces.OverwriteOptions)">
+            <summary>
+            Saves collection of series into database
+            </summary>
+            <param name="series">Collection of series</param>
+            <param name="theme">The theme associated with data series</param>
+            <param name="overwriteOption">Option to how save series</param>
+            <returns>The number of saved data values</returns>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.SearchLayersProcessing.ThemeManager">
+            <summary>
+            The ThemeManager is responsible for reading themes
+            from the database and converting them to feature sets which 
+            can be displayed in the map. It also keeps track of added or
+            deleted themes and notifies other HydroDesktop plug-ins to refresh
+            their view when a theme is created, modified or deleted
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.SearchLayersProcessing.ThemeManager.#ctor">
+            <summary>
+            Creates a new ThemeManager
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.SearchLayersProcessing.ThemeManager.GetFeatureSet(System.Int32)">
+            <summary>
+            Given a theme, create a feature set.
+            The theme already needs to have been saved in
+            the database and the themeID needs to be a
+            valid ID
+            </summary>
+            <param name="themeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.SearchLayersProcessing.ThemeManager.GetFeatureSet(System.String)">
+            <summary>
+            Given a theme name, create a feature set.
+            The theme already needs to be present in the 
+            database.
+            </summary>
+            <param name="themeName"></param>
+            <returns>The theme in the 'WGS84' projection</returns>
+            <exception cref="T:System.ArgumentException">Throws when such theme not found in the database</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.SearchLayersProcessing.ThemeManager.TableToFeatureSet(System.Data.DataTable,DotSpatial.Projections.ProjectionInfo)">
+            <summary>
+            given a data table, create an in-memory point feature set.
+            The feature set must have the 'Latitude' and 'Longitude' numeric
+            columns
+            </summary>
+            <param name="themeTable">The table of distinct series</param>
+            <param name="projection">The projection of the theme feature set</param>
+            <returns>A point FeatureSet in the WGS-84 coordinate system
+            All columns of the data table will be converted to attribute fields</returns>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.LayerInformation.ServiceInfo">
+            <summary>
+            Class with information about service on the map
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.#ctor">
+            <summary>
+            Default constructor of <see cref="T:HydroDesktop.DataDownload.LayerInformation.ServiceInfo"/>
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.Copy(HydroDesktop.DataDownload.LayerInformation.ServiceInfo)">
+            <summary>
+            Create deep copy into current instance from source
+            </summary>
+            <param name="source">Source to copy</param>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.DataSource">
+            <summary>
+            DataSource, not null.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.SiteName">
+            <summary>
+            SiteName, not null.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.ValueCount">
+            <summary>
+            ValueCount
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.ServiceDesciptionUrl">
+            <summary>
+            ServiceDesciptionUrl, not null.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.ValueCountAsString">
+            <summary>
+            ValueCount as string
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.IsEmpty">
+            <summary>
+            Shows that at least one property has not default value
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.SiteCode">
+            <summary>
+            Site code.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.LayerInformation.ServiceInfo.VarCode">
+            <summary>
+            Variable code, not null.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.LayerInformation.SearchLayerInformer">
+            <summary>
+            Provides access to services in search layer
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.SearchLayerInformer.#ctor(HydroDesktop.DataDownload.LayerInformation.IServiceInfoExtractor,DotSpatial.Controls.Map)">
+            <summary>
+            Create instance of <see cref="T:HydroDesktop.DataDownload.LayerInformation.SearchLayerInformer"/>
+            </summary>
+            <param name="serviceInfoExtractor">Instance of IServiceInfoExtractor</param>
+            <param name="map">Map</param>
+            <exception cref="T:System.ArgumentNullException">serviceInfoExtractor must be not null.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.LayerInformation.SearchLayerInformer.Stop">
+            <summary>
+            Stop engine
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.DownloadManager">
+            <summary>
+            Download manager. It downloads and saves data series.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.#ctor">
+            <summary>
+            Creates new instance of <see cref="T:HydroDesktop.DataDownload.Downloading.DownloadManager"/>
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.GetSavedData">
+            <summary>
+            Get collection of saved data
+            </summary>
+            <returns>Saved series</returns>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.SubStart(System.Collections.Generic.ICollection{System.Int32})">
+            <summary>
+            Start downloading with custom indeces of items to be downloaded
+            </summary>
+            <param name="indeces">Indeces of items to download</param>
+            <exception cref="T:System.InvalidOperationException">If downloading in progress, you must waiting while it completed.
+            Also it throws, when no previous downloads found.
+            </exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.Start(HydroDesktop.DataDownload.Downloading.StartDownloadArg)">
+            <summary>
+            Start downloading
+            </summary>
+            <param name="startDownloadArg">Download args</param>
+            <exception cref="T:System.ArgumentNullException">args must be not null.</exception>
+            <exception cref="T:System.InvalidOperationException">Throws if previous download commnad is stiil active.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.Cancel">
+            <summary>
+            Cancel downloading.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.ShowUI">
+            <summary>
+            Show UI of download manager.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.DownloadManager.HideUI">
+            <summary>
+            Hide UI of download manager.
+            </summary>
+        </member>
+        <member name="E:HydroDesktop.DataDownload.Downloading.DownloadManager.ProgressChanged">
+            <summary>
+            Raised when download progress is changed
+            </summary>
+        </member>
+        <member name="E:HydroDesktop.DataDownload.Downloading.DownloadManager.Completed">
+            <summary>
+            Raised when downloading is completed
+            </summary>
+        </member>
+        <member name="E:HydroDesktop.DataDownload.Downloading.DownloadManager.Canceled">
+            <summary>
+            Raised when downloading is cancelled
+            </summary>
+        </member>
+        <member name="E:HydroDesktop.DataDownload.Downloading.DownloadManager.OnMessage">
+            <summary>
+            Raised when download manager log message 
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.DownloadManager.IsUIVisible">
+            <summary>
+            Is GUI of download manager is visible?
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.DownloadManager.Information">
+            <summary>
+            Information about manager.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.LogMessageEventArgs">
+            <summary>
+            Event arguments for <see cref="E:HydroDesktop.DataDownload.Downloading.DownloadManager.OnMessage"/> event
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.LogMessageEventArgs.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates new instance of M<see cref="T:HydroDesktop.DataDownload.Downloading.LogMessageEventArgs"/>
+            </summary>
+            <param name="message">Message</param>
+            <param name="exception">Exception</param>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.LogMessageEventArgs.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.LogMessageEventArgs.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.DataDownloadPlugin">
+            <summary>
+            Plugin that allows to download Features data.
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.DataDownload.DataDownloadPlugin._downloadManager">
+            <summary>
+            Download manager
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.DataDownloadPlugin.StartDownloading(HydroDesktop.DataDownload.Downloading.StartDownloadArg,DotSpatial.Symbology.IFeatureLayer)">
+            <summary>
+            Starts downloading
+            </summary>
+            <param name="startArgs">Start arguments</param>
+            <param name="layer">Layer, which contains points to download</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.DataDownloadPlugin.StartDownloading(DotSpatial.Symbology.IFeatureLayer,System.Collections.Generic.IEnumerable{DotSpatial.Data.IFeature})">
+            <summary>
+            Starts downloading
+            </summary>
+            <param name="featureLayer">Layer with features to download</param>
+            <param name="featuresToDownload">Features to download. If this null, then all features from layer will be processed.</param>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.DataDownloadPlugin.Activate">
+            <ingeritdoc/>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.DataDownloadPlugin.Deactivate">
+            <summary>
+            Fires when the plug-in should become inactive
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.DataDownloadPlugin.SeriesControl">
+            <summary>
+            Series View
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.ManagerInformation">
+            <summary>
+            Information about download progress
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.ManagerInformation.#ctor(HydroDesktop.DataDownload.Downloading.StartDownloadArg,HydroDesktop.DataDownload.Downloading.DownloadManager)">
+            <summary>
+            Constructor of DownloadManagerProgress
+            </summary>
+            <param name="startDownloadArg">Information about start downloading call</param>
+            <param name="parent">Source download manager</param>
+            <exception cref="T:System.ArgumentNullException">startDownloadArg, parent must be not null.</exception>
+        </member>
+        <member name="M:HydroDesktop.DataDownload.Downloading.ManagerInformation.SetSeriesToDownload(System.Collections.Generic.ICollection{System.Int32})">
+            <summary>
+            Set series to download
+            </summary>
+            <param name="indecesToDownload">Series to download</param>
+            <exception cref="T:System.InvalidOperationException">Changing of series to download can not be done when downloading in progress.</exception>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.ManagerInformation.DownloadedAndSaved">
+            <summary>
+            Number of downloaded and saved series
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.ManagerInformation.Downloaded">
+            <summary>
+            Number of downloaded series
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.DataDownload.Downloading.ManagerInformation.WithError">
+            <summary>
+            Number of series with errors
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.DataDownload.Downloading.Exceptions.SaveDataSeriesException">
+            <summary>
+            The exception that is thrown when saving data series into database.
+            </summary>
+        </member>
+    </members>
+</doc>

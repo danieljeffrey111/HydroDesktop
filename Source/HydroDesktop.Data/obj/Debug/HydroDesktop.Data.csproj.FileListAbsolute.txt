@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\HydroDesktop.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\HydroDesktop.Data.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Data\obj\Debug\HydroDesktop.Data.pdb
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Data.XML

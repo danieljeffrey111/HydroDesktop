@@ -1,0 +1,29 @@
+g:\Visual Studio 2008\VirtualBeach2.0\bin\debug\VBStatistics.dll
+g:\Visual Studio 2008\VirtualBeach2.0\bin\debug\VBStatistics.pdb
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\ResolveAssemblyReference.cache
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll
+g:\Visual Studio 2008\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\VBStatistics.pdb
+C:\vs projects\vb4\VBStatistics\VBStatistics\obj\Debug\ResolveAssemblyReference.cache
+C:\vs projects\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll.licenses
+C:\vs projects\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll
+C:\vs projects\vb4\bin\debug\VBStatistics.dll
+C:\vs projects\vb4\bin\debug\VBStatistics.pdb
+C:\vs projects\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.pdb
+C:\vb4\bin\debug\VBStatistics.dll
+C:\vb4\bin\debug\VBStatistics.pdb
+C:\vb4\VBStatistics\VBStatistics\obj\Debug\ResolveAssemblyReference.cache
+C:\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll.licenses
+C:\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll
+C:\vb4\VBStatistics\VBStatistics\obj\Debug\VBStatistics.pdb
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\ResolveAssemblyReference.cache
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll.licenses
+G:\VirtualBeach2.0\bin\debug\VBStatistics.dll
+G:\VirtualBeach2.0\bin\debug\VBStatistics.pdb
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\VBStatistics.dll
+G:\VirtualBeach2.0\VBStatistics\VBStatistics\obj\Debug\VBStatistics.pdb
+G:\bin\debug\VBStatistics.dll
+G:\bin\debug\VBStatistics.pdb
+G:\VirtualBeach3.0\VBStatistics\obj\Debug\ResolveAssemblyReference.cache
+G:\VirtualBeach3.0\VBStatistics\obj\Debug\VBStatistics.dll.licenses
+G:\VirtualBeach3.0\VBStatistics\obj\Debug\VBStatistics.dll
+G:\VirtualBeach3.0\VBStatistics\obj\Debug\VBStatistics.pdb

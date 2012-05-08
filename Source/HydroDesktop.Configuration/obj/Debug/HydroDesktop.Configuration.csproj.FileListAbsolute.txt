@@ -1,0 +1,6 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Configuration.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Configuration.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Configuration.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Configuration\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Configuration\obj\Debug\HydroDesktop.Configuration.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Configuration\obj\Debug\HydroDesktop.Configuration.pdb

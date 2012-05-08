@@ -1,0 +1,9 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExcelExtension\ExcelExtension.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExcelExtension\ExcelExtension.pdb
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\ExcelExtension.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\ExcelExtension.dll
+C:\hydrodesktop_7e935c516515\Source\ExcelDataProvider\obj\Debug\ExcelExtension.pdb
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExcelExtension\ExcelExtension.XML

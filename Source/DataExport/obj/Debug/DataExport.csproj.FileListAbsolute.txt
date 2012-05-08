@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExportToCSV\ExportToCSV.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExportToCSV\ExportToCSV.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\ExportToCSV\ExportToCSV.pdb
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\HydroDesktop.ExportToCSV.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\HydroDesktop.ExportToCSV.ExportDialog.resources
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\ExportToCSV.dll
+C:\hydrodesktop_7e935c516515\Source\DataExport\obj\Debug\ExportToCSV.pdb

@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HydroDesktop.Data</name>
+    </assembly>
+    <members>
+        <member name="T:HydroDesktop.Database.SitesRepository">
+            <summary>
+            Repository for <see cref="T:HydroDesktop.Interfaces.ObjectModel.Site"/>
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.BaseRepository`1">
+            <summary>
+            Base Repository
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.BaseRepository`1.#ctor(HydroDesktop.Interfaces.DatabaseTypes,System.String)">
+            <summary>
+            Creates a new instance of the manager given a connection string
+            </summary>
+            <param name="dbType">The type of the database (SQLite, SQLServer, ...)</param>
+            <param name="connectionString">The connection string</param>
+        </member>
+        <member name="M:HydroDesktop.Database.BaseRepository`1.#ctor(HydroDesktop.Interfaces.IHydroDbOperations)">
+            <summary>
+            Creates a new BaseRepository associated with the specified database
+            </summary>
+            <param name="db">The DbOperations object for handling the database</param>
+        </member>
+        <member name="M:HydroDesktop.Database.BaseRepository`1.CheckDbFile(System.String)">
+            <summary>
+            Checks if the SQLite db file exists. if it doesn't exist,
+            re-create it
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.BaseRepository`1.DbOperations">
+            <summary>
+            Database operations
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.BaseRepository`1.TableName">
+            <summary>
+            Table (Entity) name for which this repository used
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.BaseRepository`1.PrimaryKeyName">
+            <summary>
+            Name of primary key column
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.OffsetTypesRepository">
+            <summary>
+            Repository for <see cref="T:HydroDesktop.Interfaces.ObjectModel.OffsetType"/>
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.MethodsRepository">
+            <summary>
+            Repository for Methods
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.DataSeriesRepository">
+            <summary>
+            Repository for DataSeries
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DataSeriesRepository.#ctor(HydroDesktop.Interfaces.DatabaseTypes,System.String)">
+            <summary>
+            Create new instance of <see cref="T:HydroDesktop.Database.DataSeriesRepository"/>
+            </summary>
+            <param name="dbType">The type of the database (SQLite, SQLServer, ...)</param>
+            <param name="connectionString">The connection string</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DataSeriesRepository.#ctor(HydroDesktop.Interfaces.IHydroDbOperations)">
+            <summary>
+            Create new instance of <see cref="T:HydroDesktop.Database.DataSeriesRepository"/>
+            </summary>
+            <param name="db">The DbOperations object for handling the database</param>
+        </member>
+        <member name="T:HydroDesktop.UnitConversions.UnitConverter">
+            <summary>
+            Contains methods for units conversion.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.UnitConversions.UnitConverter.CanConvertUnits(HydroDesktop.Interfaces.ObjectModel.Unit,HydroDesktop.Interfaces.ObjectModel.Unit)">
+            <summary>
+            Shows that one unit can be converted to another unit
+            </summary>
+            <param name="unitA">Source unit</param>
+            <param name="unitB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.UnitConversions.UnitConverter.ConvertValue(System.Double,HydroDesktop.Interfaces.ObjectModel.Unit,HydroDesktop.Interfaces.ObjectModel.Unit)">
+            <summary>
+            Convert value from one unit to another
+            </summary>
+            <param name="originalValue">Original value</param>
+            <param name="originalUnit">Unit of original value</param>
+            <param name="newUnit">New Unit</param>
+            <returns>Converted value.</returns>
+        </member>
+        <member name="M:HydroDesktop.UnitConversions.UnitConverter.ConvertSeries(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Unit)">
+            <summary>
+            Convert all values in series to new unit
+            </summary>
+            <param name="originalSeries">Original series</param>
+            <param name="newUnit">New unit</param>
+            <returns>New series with converted values.</returns>
+        </member>
+        <member name="M:HydroDesktop.UnitConversions.UnitConverter.UpdateDefaultUnits">
+            <summary>
+            Ensure that all columns need to unit conversion are present in the current database.
+            Also it populates units from default database into current database.  
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.UnitConversions.UnitConverter.UpdateDefaultUnitsFromWeb(System.String)">
+            <summary>
+            Updates units table from "ODM Controlled Vocabulary"
+            </summary>
+            <param name="connectionString">Connection string to database to update. By default it is Settings.Instance.DataRepositoryConnectionString</param>
+        </member>
+        <member name="T:HydroDesktop.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.ImportExport.DelimitedFormatOptions">
+            <summary>
+            Specifies the format options for DelimitedTextWriter
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedFormatOptions.#ctor">
+            <summary>
+            Creates a new instance of delimited format options with default settings
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.Delimiter">
+            <summary>
+            The delimiter to be used to separate data items in a given data row.
+            Typically this is comma (","), semicolon (";"), space or tab
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.IncludeHeaders">
+            <summary>
+            True if the column names from the data table should be included as headers in the output streamTrue if column headers should be included, false otherwise
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.DateTimeFormat">
+            <summary>
+            The culture specific date/time format
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.UseShortDateFormat">
+            <summary>
+            If true, then the short date format is used
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.Append">
+            <summary>
+            Determines whether data is to be appended to the file. If the file exists and append is false, the file is overwritten. If the file exists and append is true, the data is appended to the file. Otherwise, a new file is created.
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.ImportExport.DelimitedFormatOptions.UseInvariantCulture">
+            <summary>
+            True if the culture should be set to InvariantCulture (decimal points will always be saved as ".")
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.RepositoryFactory">
+            <summary>
+            Factory to get repositories
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.RepositoryFactory.Get``1">
+            <summary>
+            Get instance of repository of type <see cref="!:T"/> using default settings
+            </summary>
+            <returns>Instance of <see cref="!:T"/></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.RepositoryFactory.Get``1(HydroDesktop.Interfaces.DatabaseTypes,System.String)">
+            <summary>
+            Get instance of <see cref="!:T"/> using connection string
+            </summary>
+            <param name="dbType">The type of the database (SQLite, SQLServer, ...)</param>
+            <param name="connectionString">The connection string</param>
+            <returns>Instance of <see cref="!:T"/></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.RepositoryFactory.Get``1(HydroDesktop.Interfaces.IHydroDbOperations)">
+            <summary>
+            Get instance of <see cref="!:T"/> using DbOperations
+            </summary>
+            <param name="dbOperations">The DbOperations object for handling the database</param>
+            <returns>Instance of <see cref="!:T"/></returns>
+        </member>
+        <member name="P:HydroDesktop.Database.RepositoryFactory.Instance">
+            <summary>
+            Instance of RepositoryFactory
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.UnitConversionsRepository">
+            <summary>
+            Repository for <see cref="T:HydroDesktop.Interfaces.ObjectModel.UnitConversion"/>
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.DbOperations">
+            <summary>
+            Commonly used database operations
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.#ctor(System.String,HydroDesktop.Interfaces.DatabaseTypes)">
+            <summary>
+            Creates a new instance of the dbOperations object. 
+            </summary>
+            <param name="connectionString">the connection string</param>
+            <param name="databaseType">the type of the DBMS (SQLite, SQLServer)</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.TestConnection">
+            <summary>
+            Test if we are able to connect to the database specified in the constructor
+            </summary>
+            <returns>true if connection successful, false otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateConnection">
+            <summary>
+            Creates a new instance of a database connection
+            </summary>
+            <returns>the database connection</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateCommand(System.String)">
+            <summary>
+            Creates a new instance of a database command
+            </summary>
+            <param name="txtQuery">the SQL query</param>
+            <returns>the database command</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateParameter(System.Data.DbType)">
+            <summary>
+            Creates a new command parameter with the specified data type
+            </summary>
+            <param name="parameterType">the parameter data type</param>
+            <returns>The parameter object</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateParameter(System.String,System.Data.DbType)">
+            <summary>
+            Creates a new instance of a database command parameter with the specified name 
+            and data type
+            </summary>
+            <param name="name">the parameter name</param>
+            <param name="parameterType">the parameter data type</param>
+            <returns>the database command parameter</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateParameter(System.Data.DbType,System.Object)">
+            <summary>
+            Creates a new dB command parameter with the specified name and value
+            </summary>
+            <param name="parameterType"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.AddParameter(System.Data.Common.DbCommand,System.String,System.Data.DbType)">
+            <summary>
+            Adds a parameter to an existing command
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteNonQuery(System.String)">
+            <summary>
+            Executes a SQL statement without returning any results.
+            This is used for INSERT or DELETE statements.
+            </summary>
+            <param name="sqlString">the SQL string</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteNonQuery(System.Data.Common.DbCommand)">
+            <summary>
+            Executes a SQL command without returning any results.
+            This is used for INSERT or DELETE commands.
+            </summary>
+            <param name="cmd">the database command</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            Executes an SQL command without returning any results.
+            This is used for INSERT or DELETE commands. The parameter values
+            can be supplied in the parameter array
+            </summary>
+            <param name="txtQuery">the SQL query (parameters should be marked as
+            ? or @)</param>
+            <param name="parameterValues">the values of the command parameters</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteBatchSQL(System.String,System.Object[][])">
+            <summary>
+            Executes a batch SQL insert / update statement. The SQL string should have parameters
+            marked as '?'. Number of parameters needs to be the same as the parameterValues[][]
+            2d-array row length
+            </summary>
+            <param name="sqlString">the sql insert statement(should use parameters)</param>
+            <param name="parameterValues">the values of sql parameters</param>
+            <returns>The array of new primary keys</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteBatchSQL(System.String,System.Collections.Generic.IList{System.Int32},System.String,System.Data.DataTable)">
+            <summary>
+            Executes a multiple-row insert or update operation (similar to DataAdapter.Update())
+            </summary>
+            <param name="sqlString">the sql string (should be an insert or an update command)</param>
+            <param name="rowIndices">the indices of data rows to be inserted or updated</param>
+            <param name="primaryKey">the primary key column name</param>
+            <param name="table">the local copy of the data table</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.GenerateInsertCommand(System.String,System.Data.DataTable)">
+            <summary>
+            Generates an SQL Insert command for the given table name.
+            We assume that the first column is the identifier column.
+            </summary>
+            <param name="tableName">name of the database table</param>
+            <param name="table">corresponding DataTable object</param>
+            <returns>the insert sql string (parametric query)</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.GenerateUpdateCommand(System.String,System.String,System.Data.DataTable)">
+            <summary>
+            Generates an SQL Update command for the given table name.
+            </summary>
+            <param name="tableName">name of the database table</param>
+            <param name="primaryKeyName">name of the primary key column</param>
+            <param name="table">corresponding DataTable object</param>
+            <returns>the update sql string (parametric query)</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.GenerateUniqueQueryCommand(System.String,System.String,System.String[])">
+            <summary>
+            Creates an unique query command object
+            </summary>
+            <param name="tableName">table name</param>
+            <param name="primaryKeyName">primary key name</param>
+            <param name="uniqueFields">list of unique columnhs</param>
+            <returns>the DB command object that can be used for running the query</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.SaveTable(System.String,System.Data.DataTable,System.String,System.String[])">
+            <summary>
+            Inserts the content of the data table back to database. If a row already exists that has
+            the unique fields, then an update is done instead of an insert. The primary key (ID) values are modified
+            to reflect their values in the database
+            </summary>
+            <param name="tableName">name of the DataTable</param>
+            <param name="primaryKey">the name of the primary key column</param>
+            <param name="table">In-memory Datatable. This table must have exactly same structure as the database table</param>
+            <param name="uniqueFields">an array of all field names that define an unique key ('business key')</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateCommand(System.String,System.Int32)">
+            <summary>
+            Creates a new database command with an array of parameters
+            </summary>
+            <param name="sqlString">the SQL string</param>
+            <param name="numParameters">the number of command parameters</param>
+            <returns>a new instance of a database command object</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.GetNextID(System.String,System.String)">
+            <summary>
+            Get the next auto-incremented (primary key) ID
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.LoadTable(System.String,System.Data.DataTable)">
+            <summary>
+            Updates the existing in-memory data table object by 
+            the results of the SQL query
+            </summary>
+            <param name="sqlQuery"></param>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.LoadTable(System.String)">
+            <summary>
+            Based on a SQL query, returns a data table with all rows that
+            match the query results
+            </summary>
+            <param name="sqlQuery">the SQL query string</param>
+            <returns>The resulting data table</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.LoadTable(System.String,System.String)">
+            <summary>
+            Based on a SQL query, returns a data table with all rows that
+            match the query results
+            </summary>
+            <param name="tableName">name of the resulting data table</param>
+            <param name="sqlQuery">the SQL query string</param>
+            <returns>The resulting data table</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.LoadTable(System.String,System.Data.Common.DbCommand)">
+            <summary>
+            Based on a database command, returns a data table with all rows that
+            match the query results
+            </summary>
+            <param name="tableName">name of the resulting data table</param>
+            <param name="cmd">the database command (with parameter values set)</param>
+            <returns>The resulting data table</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.CreateDataAdapter(System.String,System.String)">
+            <summary>
+            Creates a data adapter for the specified data table
+            </summary>
+            <param name="tableName">name of the table in the database</param>
+            <param name="primaryKeyName">name of primary key column</param>
+            <returns>a new data adapter associated with the table</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.ExecuteSingleOutput(System.String,System.Object[])">
+            <summary>
+            Executes an SQL query with a single output value
+            </summary>
+            <param name="inputString">the SQL query string</param>
+            <param name="parameters">the values of command parameters</param>
+            <returns>the query result (value of first matching row and column)</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbOperations.GetTableSchema(System.String)">
+            <summary>
+            returns a DataTable object that has the same schema as
+            the user-specified table with the name
+            </summary>
+            <param name="tableName">name of the table in the database</param>
+            <returns>an empty dataTable with the same column names and types</returns>
+        </member>
+        <member name="P:HydroDesktop.Database.DbOperations.DbFactory">
+            <summary>
+            The database provider factory currently used
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.DbOperations.ErrorMessage">
+            <summary>
+            Error message displayed in case of unsuccessful connection
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.DbOperations.ConnectionString">
+            <summary>
+            Get the database connection string
+            </summary>
+        </member>
+        <member name="P:HydroDesktop.Database.DbOperations.DatabaseType">
+            <summary>
+            Database type (supported type is SQLite)
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.ImportExport.CsvFileParser">
+            <summary>
+            Helper class for CSV file parsing
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvFileParser.GetUniqueColumnName(System.Data.DataTable)">
+            <summary>
+            Creates a name for a column that has not been used for any existing columns in the given data table
+            </summary>
+            <param name="dataTable">The data table for which a unique column name is to be created</param>
+            <returns>A unique column name for the data table</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvFileParser.GetUniqueColumnName(System.Data.DataTable,System.String)">
+            <summary>
+            Creates a name for a column that has not been used for any existing columns in the given data table
+            </summary>
+            <param name="dataTable">The data table for which a unique column name is to be created</param>
+            <param name="baseColumnName">The base column name to start with when creating a unique column name. A number will be appended to the base column name until a unique column name is found.</param>
+            <returns>A unique column name for the data table</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvFileParser.CountLinesInFile(System.String)">
+            <summary>
+            Counts the number of lines in a file 
+            </summary>
+            <param name="fileName">The full path to and name of the file to count lines in</param>
+            <returns>The number of lines in the file</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvFileParser.ParseFileToDataTable(System.String,System.Boolean,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs,System.Int32)">
+            <summary>
+            Parses a comma separated file into a DataTable
+            </summary>
+            <param name="fileToParse">The full path to and name of the CSV file to parse</param>
+            <param name="hasHeaders">True if the file has column headers; false otherwise</param>
+            <param name="bgWorker">BackgroundWorker (may be null), in order to show progress</param>
+            <param name="e">Arguments from a BackgroundWorker (may be null), in order to support canceling</param>
+            <param name="maxRowsCount">Max rows count in result DataTable </param>
+            <returns>DataTable of the parsed data</returns>
+        </member>
+        <member name="T:HydroDesktop.Database.SQLiteHelper">
+            <summary>
+            This class contains methods for working with the
+            SQLite database
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.GetSQLiteFileName(System.String)">
+            <summary>
+            To get the SQLite database path given the SQLite connection string
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.GetSQLiteConnectionString(System.String)">
+            <summary>
+            To get the full SQLite connection string given the SQLite database path
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.CreateSQLiteDatabase(System.String)">
+            <summary>
+            Create the default .SQLITE database in the user-specified path
+            </summary>
+            <returns>true if database was created, false otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.CreateMetadataCacheDb(System.String)">
+            <summary>
+            Create the default empty MetadataCache.SQLITE database in the user-specified path
+            The created database has the correct db schema.
+            </summary>
+            <returns>true if database was created, false otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.DatabaseExists(System.String)">
+            <summary>
+            Check if the path is a valid SQLite database
+            This function returns false, if the SQLite db
+            file doesn't exist or if the file size is 0 Bytes
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.SQLiteHelper.CheckDatabaseSchema(System.String,HydroDesktop.Database.DatabaseType)">
+            <summary>
+            Validate database schema.
+            If schema not valid - InvalidDatabaseSchemaException throws.
+            </summary>
+            <param name="databaseToCheck">Path to SQLite checked database.</param>
+            <param name="databaseType">Database type.</param>
+            <exception cref="T:HydroDesktop.Database.InvalidDatabaseSchemaException">Throws if database schema not valid.</exception>
+        </member>
+        <member name="T:HydroDesktop.Database.DatabaseType">
+            <summary>
+            The type of SQLite database (data repositor or metadata cache)
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.Database.DatabaseType.DefaulDatabase">
+            <summary>
+            Data repository sqlite database
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.Database.DatabaseType.MetadataCacheDatabase">
+            <summary>
+            Metadata cache SQLite database
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.InvalidDatabaseSchemaException">
+            <summary>
+            This exception occurs in case of invalid database schema
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.InvalidDatabaseSchemaException.#ctor">
+            <summary>
+            new instance of invalid database schema exception
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.InvalidDatabaseSchemaException.#ctor(System.String,System.Exception)">
+            <summary>
+            invalid database schema exception with message and inner exception
+            </summary>
+            <param name="message">the error messsage</param>
+            <param name="inner">the inner exception</param>
+        </member>
+        <member name="M:HydroDesktop.Database.InvalidDatabaseSchemaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            invalid database schema exception with serialization info and streaming context
+            </summary>
+            <param name="info">serialization info</param>
+            <param name="context">streaming context</param>
+        </member>
+        <member name="T:HydroDesktop.Database.UnitsRepository">
+            <summary>
+            Repository for <see cref="T:HydroDesktop.Interfaces.ObjectModel.Unit"/>
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.ImportExport.BackgroundWorkerReportingOptions">
+            <summary>
+            background worker progress report information
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.ImportExport.BackgroundWorkerReportingOptions.UserStateAndProgress">
+            <summary>
+            report both user state and progress
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.ImportExport.BackgroundWorkerReportingOptions.ProgressOnly">
+            <summary>
+            only report progress
+            </summary>
+        </member>
+        <member name="F:HydroDesktop.ImportExport.BackgroundWorkerReportingOptions.None">
+            <summary>
+            report none
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.ImportExport.DelimitedTextWriter">
+            <summary>
+            Writes items to a text file in which items should be separated by a delimiter
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.#ctor(System.IO.TextWriter,System.String)">
+            <summary>
+            Initializes a new instance of the DelimitedTextWriter class for the specified stream, using the specified delimiter and the default encoding and buffer size.
+            </summary>
+            <param name="textStream">The stream to write to.</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the DelimitedTextWriter class for the specified file on the specified path, using the specified delimiter and the default encoding and buffer size.
+            </summary>
+            <param name="path">The complete file path to write to.</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the DelimitedTextWriter class for the specified file on the specified path, using the specified delimiter and the default encoding and buffer size. If the file exists, it can be either overwritten or appended to. If the file does not exist, this constructor creates a new file.
+            </summary>
+            <param name="path">The complete file path to write to.</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <param name="append">Determines whether data is to be appended to the file. If the file exists and append is false, the file is overwritten. If the file exists and append is true, the data is appended to the file. Otherwise, a new file is created.</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.Finalize">
+            <summary>
+            dispose the delimited text writer
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.FormatDataItem(System.String,System.String)">
+            <summary>
+            Formats the input string so that it can be parsed properly in a delimited file, by enclosing the string in double quotes if the string contains characters that would make parsing difficult
+            </summary>
+            <param name="dataItem">The input string to format</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <returns>Properly formatted string for writing to a delimited file</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.OpenStream(System.String,System.Boolean)">
+            <summary>
+            Opens a TextWriter to the output file
+            </summary>
+            <param name="outputFilename">Full path and filename for the output file</param>
+            <param name="append">Determines whether data is to be appended to the file. If the file exists and append is false, the file is overwritten. If the file exists and append is true, the data is appended to the file. Otherwise, a new file is created.</param>
+            <returns>TextWriter for the file at the path specified</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.Close">
+            <summary>
+            Closes the current DelimitedTextWriter and the underlying stream
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.WriteLine(System.Data.DataRow,System.Boolean)">
+            <summary>
+            Converts items from a data table row to a delimited list of items, writes the list to the text stream in a single line, and then writes a line terminator to the stream
+            </summary>
+            <param name="row">Data row containing the items to be written as a delimited list in a single line</param>
+            <param name="formatItems">True if each item should be formatted for delimited file compatibility</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.WriteLine(System.String[],System.Boolean)">
+            <summary>
+            Converts input items to a delimited list of items, writes the list to the text stream in a single line, and then writes a line terminator to the stream
+            </summary>
+            <param name="items">The items which should be written as a delimited list in a single line</param>
+            <param name="formatItems">True if each item should be formatted for delimited file compatibility</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToStream(System.Data.DataTable,System.IO.TextWriter,HydroDesktop.ImportExport.DelimitedFormatOptions)">
+            <summary>
+            Writes data from a data table to a text stream, formatted as delimited values
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputStream">The text stream to which the delimited data will be written</param>
+            <param name="formatOptions">The delimited text stream formatting options</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToStream(System.Data.DataTable,System.IO.TextWriter,HydroDesktop.ImportExport.DelimitedFormatOptions,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs,HydroDesktop.ImportExport.BackgroundWorkerReportingOptions)">
+            <summary>
+            Writes data from a data table to a text stream, formatted as delimited values
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputStream">The text stream to which the delimited data will be written</param>
+            <param name="formatOptions">The delimited text stream formatting options</param>
+            <param name="bgWorker">BackgroundWorker (may be null), in order to show progress</param>
+            <param name="e">Arguments from a BackgroundWorker (may be null), in order to support canceling</param>
+            <param name="reportingOption">Indicates how the BackgroundWorker should report progress</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToDelimitedFile(System.Data.DataTable,System.String,System.String,System.Boolean)">
+            <summary>
+            Writes data from a data table to a delimited text file
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputFilename">Full path and filename for the output file</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <param name="includeHeaders">True if the column names from the data table should be included as headers in the output stream</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToDelimitedFile(System.Data.DataTable,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Writes data from a data table to a delimited text file
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputFilename">Full path and filename for the output  file</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <param name="includeHeaders">True if the column names from the data table should be included as headers in the output stream</param>
+            <param name="append">Determines whether data is to be appended to the file. If the file exists and append is false, the file is overwritten. If the file exists and append is true, the data is appended to the file. Otherwise, a new file is created.</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToDelimitedFile(System.Data.DataTable,System.String,System.String,System.Boolean,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs,HydroDesktop.ImportExport.BackgroundWorkerReportingOptions)">
+            <summary>
+            Writes data from a data table to a delimited text file
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputFilename">Full path and filename for the output  file</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <param name="includeHeaders">True if the column names from the data table should be included as headers in the output stream</param>
+            <param name="bgWorker">BackgroundWorker (may be null), in order to show progress</param>
+            <param name="e">Arguments from a BackgroundWorker (may be null), in order to support canceling</param>
+            <param name="reportingOption">Indicates how the BackgroundWorker should report progress</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToDelimitedFile(System.Data.DataTable,System.String,System.String,System.Boolean,System.Boolean,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs,HydroDesktop.ImportExport.BackgroundWorkerReportingOptions)">
+            <summary>
+            Writes data from a data table to a delimited text file
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputFilename">Full path and filename for the output  file</param>
+            <param name="delimiter">The delimiter to be used to separate data items in a given data row.</param>
+            <param name="includeHeaders">True if the column names from the data table should be included as headers in the output stream</param>
+            <param name="append">Determines whether data is to be appended to the file. If the file exists and append is false, the file is overwritten. If the file exists and append is true, the data is appended to the file. Otherwise, a new file is created.</param>
+            <param name="bgWorker">BackgroundWorker (may be null), in order to show progress</param>
+            <param name="e">Arguments from a BackgroundWorker (may be null), in order to support canceling</param>
+            <param name="reportingOption">Indicates how the BackgroundWorker should report progress</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.DataTableToDelimitedFile(System.Data.DataTable,System.String,HydroDesktop.ImportExport.DelimitedFormatOptions,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs,HydroDesktop.ImportExport.BackgroundWorkerReportingOptions)">
+            <summary>
+            Writes data from a data table to a delimited text file
+            </summary>
+            <param name="dataTable">The data table with the data to write</param>
+            <param name="outputFilename">Full path and filename for the output  file</param>
+            <param name="formatOptions">Delimited text formatting options</param>
+            <param name="bgWorker">BackgroundWorker (may be null), in order to show progress</param>
+            <param name="e">Arguments from a BackgroundWorker (may be null), in order to support canceling</param>
+            <param name="reportingOption">Indicates how the BackgroundWorker should report progress</param>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.Dispose">
+            <summary>
+            supresses the GC when disposing object
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.DelimitedTextWriter.Dispose(System.Boolean)">
+            <summary>
+            Dispose the writer object
+            </summary>
+            <param name="disposing">true if disposing is in progress</param>
+        </member>
+        <member name="T:HydroDesktop.Database.SeriesProvenanceRepository">
+            <summary>
+            Repository for <see cref="T:HydroDesktop.Interfaces.ObjectModel.SeriesProvenance"/>
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.DataThemesRepository">
+            <summary>
+            Repository for DataThemes
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DataThemesRepository.DeleteTheme(System.Int32)">
+            <summary>
+            Deletes a theme and all its series as long as the series don't belong to any other theme.
+            </summary>
+            <param name="themeID">The Theme ID</param>
+            <returns>true if successful, false otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DataThemesRepository.DeleteTheme(System.Int32,System.ComponentModel.BackgroundWorker,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Delete a theme - a background worker and progress bar is used
+            </summary>
+            <param name="themeID">The themeID (this needs to be a valid ID)</param>
+            <param name="worker">The background worker component</param>
+            <param name="e">The arguments for background worker</param>
+            <returns></returns>
+        </member>
+        <member name="T:HydroDesktop.Database.DbRepositoryManagerSQL">
+            <summary>
+            Helper class for reading and writing HydroDesktop objects to
+            and from the HydroDesktop data repository SQLite database
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.#ctor(HydroDesktop.Interfaces.DatabaseTypes,System.String)">
+            <summary>
+            Creates a new instance of the manager given a connection string
+            </summary>
+            <param name="dbType">The type of the database (SQLite, SQLServer, ...)</param>
+            <param name="connectionString">The connection string</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.#ctor(HydroDesktop.Interfaces.IHydroDbOperations)">
+            <summary>
+            Creates a new RepositoryManager associated with the specified database
+            </summary>
+            <param name="db">The DbOperations object for handling the database</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.SaveSeries(System.Int32,System.Int32,System.String,System.String,System.Data.DataTable)">
+            <summary>
+            Simplified version of SaveSeries (for HydroForecaster)
+            </summary>
+            <param name="siteID">site ID</param>
+            <param name="variableID">variable ID</param>
+            <param name="methodDescription">description of method</param>
+            <param name="themeName">theme name</param>
+            <param name="dataValues">The table with data values. First column must be DateTime and second column must be Double.</param>
+            <returns>number of saved data values</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.SaveSeries(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Theme,HydroDesktop.Interfaces.OverwriteOptions)">
+            <summary>
+            Saves a data series to the database. The series will be associated with the 
+            specified theme. Depending on the OverwriteOptions, this will check if the series
+            already exists in the database and overwrite data values in the database if required. 
+            </summary>
+            <param name="seriesToSave">The data series to be saved. This should contain
+            information about site, variable, method, source and quality control level.</param>
+            <param name="theme">The theme where this series should belong to</param>
+            <param name="overwrite">The overwrite options. Set this to 'Copy' if 
+            a new series should be created in the database. For options other than 'Copy',
+            some of the existing data values in the database may be overwritten.</param>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.SaveSeriesAppend(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Theme)">
+            <summary>
+            Saves a data series to the database. The series will be associated with the 
+            specified theme. This method checks whether there are any existing series with 
+            the same properties in the database. If there are existing series with the same
+            properties, the new data values are 'appended' to the existing series (no duplicate
+            series or data values are created)
+            </summary>
+            <param name="series">The time series</param>
+            <param name="theme">The associated theme</param>
+            <returns>Number of DataValue saved</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.SaveSeriesOverwrite(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Theme)">
+            <summary>
+            Saves a data series to the database. The series will be associated with the 
+            specified theme. This method checks whether there is any existing series with 
+            the same site, variable, method, source and QCLevel in the database. If there 
+            is an existing series with the same properties, the existing series is deleted
+            and it is replaced by the new series.
+            </summary>
+            <param name="series">The time series</param>
+            <param name="theme">The associated theme</param>
+            <returns>Number of DataValue saved</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DbRepositoryManagerSQL.SaveSeriesAsCopy(HydroDesktop.Interfaces.ObjectModel.Series,HydroDesktop.Interfaces.ObjectModel.Theme)">
+            <summary>
+            Saves a data series to the database. The series will be associated with the 
+            specified theme. This method does not check whether there are any existing series with 
+            the same properties in the database. It will always create a new 'copy' of the series
+            </summary>
+            <param name="series">The time series</param>
+            <param name="theme">The associated theme</param>
+            <returns>Number of DataValue saved</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvStreamReader.ReadData">
+            <summary>
+            Reads one data item (an item delimited by commas) in a line from a CSV stream
+            </summary>
+            <returns>A string representing the data item, or null if the end of the line was already reached in the stream</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvStreamReader.Peek">
+            <summary>
+            Returns the next available character but does not consume it
+            </summary>
+            <returns>The next character to be read</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvStreamReader.ReadCharacter">
+            <summary>
+            Returns the next available character
+            </summary>
+            <returns>The next character to be read</returns>
+        </member>
+        <member name="M:HydroDesktop.ImportExport.CsvStreamReader.ReadLine">
+            <summary>
+            Reads a line from the CSV stream, and parses it into a string array
+            </summary>
+            <returns>String array of data items parsed from the stream, or null if the end of the stream has been reached</returns>
+        </member>
+        <member name="T:HydroDesktop.Database.MetadataCacheManagerSQL">
+            <summary>
+            This class is responsible for communication with the 'Metadata Cache' database
+            This is an alternative implementation internally using SQL queries instead of NHibernate.
+            This is to compare saving speed.
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.#ctor(HydroDesktop.Interfaces.DatabaseTypes,System.String)">
+            <summary>
+            Creates a new instance of the manager given a connection string
+            </summary>
+            <param name="dbType">The type of the database (SQLite, SQLServer, ...)</param>
+            <param name="connectionString">The connection string</param>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.#ctor(HydroDesktop.Database.DbOperations)">
+            <summary>
+            Creates a new instance of the manager using a DbOperations object
+            </summary>
+            <param name="db">The dbOperations object</param>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetAllServices">
+            <summary>
+            Get all data services saved in the metadata cache database
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetServiceByServiceUrl(System.String)">
+            <summary>
+            Get data service by serviceUrl
+            </summary>
+            <param name="serviceURL">ServiceUrl</param>
+            <returns>Data service or null (if not found)</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetServicesInBox(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets a list of all services within the bounding box
+            </summary>
+            <param name="xMin">minimum x (longitude)</param>
+            <param name="xMax">maximum x (lognitude)</param>
+            <param name="yMin">minimum y (latitude)</param>
+            <param name="yMax">maximum y (latitude)</param>
+            <returns>the list of serviceInfo objects matching the criteria</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.SeriesDataCartFromRow(System.Data.DataRow)">
+            <summary>
+            Converts DataRow into SeriesDataCart
+            </summary>
+            <param name="row">DataRow to convert</param>
+            <returns>SeriesDataCart</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetSeriesListInBox(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets a list of all data series within the bounding box
+            </summary>
+            <param name="xMin">minimum X (longitude)</param>
+            <param name="xMax">maximum X (longitude)</param>
+            <param name="yMin">minimum Y (latitude)</param>
+            <param name="yMax">maximum Y (latitude)</param>
+            <returns>the list of data series metadata matching the search criteria</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetSeriesDataTableInBox(System.Double,System.Double,System.Double,System.Double,System.String[],System.DateTime,System.DateTime,System.Int32[])">
+            <summary>
+            Gets a data table of all data series within the bounding box
+            </summary>
+            <param name="xMin">minimum X (longitude)</param>
+            <param name="xMax">maximum X (longitude)</param>
+            <param name="yMin">minimum Y (latitude)</param>
+            <param name="yMax">maximum Y (latitude)</param>
+            <param name="conceptCodes">array of Concept keywords</param>
+            <param name="startDate">start date</param>
+            <param name="endDate">end date</param>
+            <param name="networkIDs">larray of service codes</param>
+            <returns>the list of data series metadata matching the search criteria</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetSeriesListInBox(System.Double,System.Double,System.Double,System.Double,System.String[],System.DateTime,System.DateTime,System.Int32[])">
+            <summary>
+            Gets a list of all data series within the bounding box
+            </summary>
+            <param name="xMin">minimum X (longitude)</param>
+            <param name="xMax">maximum X (longitude)</param>
+            <param name="yMin">minimum Y (latitude)</param>
+            <param name="yMax">maximum Y (latitude)</param>
+            <param name="conceptCodes">array of Concept keywords</param>
+            <param name="startDate">start date</param>
+            <param name="endDate">end date</param>
+            <param name="networkIDs">larray of service codes</param>
+            <returns>the list of data series metadata matching the search criteria</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetVariables">
+            <summary>
+            Gets all variables that are currently stored in the metadata cache database
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetVariablesByService(System.Int32)">
+            <summary>
+            Gets all variables that are currently stored in the metadata cache database
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetVariableNamesByService(System.Int32)">
+            <summary>
+            Gets the names of all variables accessible by the specific web service
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.GetVariableNames">
+            <summary>
+            Gets the names of all variables that are currently stored in the metadata cache DB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.SaveDataService(HydroDesktop.Interfaces.ObjectModel.DataServiceInfo)">
+            <summary>
+            Saves a new data service object to the database. If an entry with the same
+            web service URL already exists in the database, update it.
+            </summary>
+            <param name="service">the ServiceInfo object to be saved to the DB</param>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.DeleteRecordsForService(HydroDesktop.Interfaces.ObjectModel.DataServiceInfo,System.Boolean)">
+            <summary>
+            Deletes all entries in the metadata cache database that were
+            added by the data service
+            </summary>
+            <param name="service">The serviceInfo object to be deleted</param>
+            <param name="deleteService">Set to true if the record in the DataServices
+            table should also be deleted. Set to false if the record in the DataServices
+            table should be kept</param>
+            <returns>The total number of records deleted</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.DeleteSeries(System.Int32)">
+            <summary>
+            Deletes a series given it's ID. The series is only deleted when it belongs to one theme.
+            </summary>
+            <param name="seriesID">The database ID of the series</param>
+            <returns>true if series was deleted, false otherwise</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.CheckIfSeriesExists(HydroDesktop.Interfaces.ObjectModel.SeriesMetadata)">
+            <summary>
+            Check if the series with the same site, variable, method,
+            source, quality control level and data service already
+            exists in the database.
+            </summary>
+            <param name="seriesToCheck">the series to be checked</param>
+            <returns>The series from the db, or NULL if it doesn't exist</returns>
+            <remarks>Not implemented</remarks>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.SaveSeries(HydroDesktop.Interfaces.ObjectModel.SeriesMetadata,HydroDesktop.Interfaces.ObjectModel.DataServiceInfo)">
+            <summary>
+            Saves the series metadata to the metadata cache database.
+            This method also automatically saves the site, variable,
+            method, source and quality control level of the series.
+            </summary>
+            <param name="series">The series to be saved</param>
+            <param name="dataService">The web service containing the series</param>
+        </member>
+        <member name="M:HydroDesktop.Database.MetadataCacheManagerSQL.UpdateDataRow(HydroDesktop.Interfaces.ObjectModel.DataServiceInfo)">
+            <summary>
+            updates the data row corresponding to the serviceInfo object
+            The following parameters are updated:
+            IsHarvested
+            HarveDateTime
+            ServiceName
+            ServiceVersion
+            ServiceType
+            ServiceProtocol
+            EastLongitude
+            WestLongitude
+            EastLatitude
+            WestLatitude
+            </summary>
+            <param name="serviceInfo">the corresponding ServiceInfo</param>
+        </member>
+        <member name="T:HydroDesktop.Database.DataReader">
+            <summary>
+            Auxiliary data reader class
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.DataReader.ReadString(System.Object)">
+            <summary>
+            Convert object in data reader result to null or string
+            </summary>
+            <param name="obj">the value in the DB</param>
+            <returns>Null if the value in DB is NULL, string if the value is a valid string</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DataReader.ReadInteger(System.Object)">
+            <summary>
+            Convert object in data reader result to Integer
+            </summary>
+            <param name="obj">the value in the DB</param>
+            <returns>Null if the value in DB is NULL, 
+            Integer if the value is a valid Integer number</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DataReader.ReadDouble(System.Object)">
+            <summary>
+            Convert object in data reader result to Double
+            </summary>
+            <param name="obj">the value in the DB</param>
+            <returns>Null if the value in DB is NULL, 
+            Double if the value in the DB is a valid Double number</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DataReader.ReadBoolean(System.Object)">
+            <summary>
+            Convert object in data reader result to boolean
+            </summary>
+            <param name="obj">the value in the DB</param>
+            <returns>Null if the value in DB is NULL, 
+            a boolean value if the value in the DB is a valid boolean value</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.DataReader.ReadDateTime(System.Object)">
+            <summary>
+            Convert object in data reader result to DateTime
+            </summary>
+            <param name="obj">the value in the DB</param>
+            <returns>Null if the value in DB is NULL, 
+            DateTime if the value in the DB is a valid date time</returns>
+        </member>
+        <member name="T:HydroDesktop.Database.CaseInsensitiveEqualityComparer">
+            <summary>
+            equality comparer (case insensitive)
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.CaseInsensitiveEqualityComparer.#ctor">
+            <summary>
+            creates a new instance of the comparer
+            </summary>
+        </member>
+        <member name="M:HydroDesktop.Database.CaseInsensitiveEqualityComparer.#ctor(System.Globalization.CultureInfo)">
+            <summary>
+            creates a culture specific instance of the comparer
+            </summary>
+            <param name="myCulture">the CultureInfo parameter</param>
+        </member>
+        <member name="M:HydroDesktop.Database.CaseInsensitiveEqualityComparer.Equals(System.String,System.String)">
+            <summary>
+            alphabetic equality comparison of two strings
+            </summary>
+            <param name="x">string x</param>
+            <param name="y">string y</param>
+            <returns>true if the lowercase x and lowercase y are equal</returns>
+        </member>
+        <member name="M:HydroDesktop.Database.CaseInsensitiveEqualityComparer.GetHashCode(System.String)">
+            <summary>
+            hash code of the equality comparer
+            </summary>
+            <param name="obj">object</param>
+            <returns>true if lowercase strings have identical hash codes</returns>
+        </member>
+        <member name="T:HydroDesktop.Database.VariablesRepository">
+            <summary>
+            Repository for Variables
+            </summary>
+        </member>
+        <member name="T:HydroDesktop.Database.DataValuesRepository">
+            <summary>
+            Repository for DataValues
+            </summary>
+        </member>
+    </members>
+</doc>

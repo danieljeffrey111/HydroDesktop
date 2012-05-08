@@ -1,0 +1,5 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DotSpatial.Plugins.AttributeDataExplorer\HydroDesktop.GetAttributeDataExplorer.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DotSpatial.Plugins.AttributeDataExplorer\HydroDesktop.GetAttributeDataExplorer.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetAttributeDataExplorer\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetAttributeDataExplorer\obj\Debug\HydroDesktop.GetAttributeDataExplorer.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.GetAttributeDataExplorer\obj\Debug\HydroDesktop.GetAttributeDataExplorer.pdb

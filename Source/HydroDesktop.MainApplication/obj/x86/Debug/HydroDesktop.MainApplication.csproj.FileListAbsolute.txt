@@ -1,0 +1,12 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktopSplashLogo.png
+C:\hydrodesktop_7e935c516515\Binaries\Resources\HydroDesktop.ico
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop_1_5.exe.config
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop_1_5.exe
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop_1_5.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\HydroDesktop.MainApplication.MainForm.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\HydroDesktop.MainApplication.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\HydroDesktop_1_5.exe
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.MainApplication\obj\x86\Debug\HydroDesktop_1_5.pdb

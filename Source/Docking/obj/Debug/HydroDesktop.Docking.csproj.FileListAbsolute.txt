@@ -1,0 +1,8 @@
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.Docking.dll
+C:\hydrodesktop_7e935c516515\Binaries\Application Extensions\HydroDesktop.Docking.pdb
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\HydroDesktop.Docking.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\HydroDesktop.Docking.dll
+C:\hydrodesktop_7e935c516515\Source\Docking\obj\Debug\HydroDesktop.Docking.pdb

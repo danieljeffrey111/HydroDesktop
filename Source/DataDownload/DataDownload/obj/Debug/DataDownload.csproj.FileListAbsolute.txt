@@ -1,0 +1,13 @@
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataDownload\DataDownload.dll.config
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataDownload\DataDownload.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataDownload\DataDownload.pdb
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\HydroDesktop.DataDownload.Downloading.DownloadManagerUI.resources
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\HydroDesktop.DataDownload.Downloading.RedownloadControl.resources
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\HydroDesktop.DataDownload.LayerInformation.CustomToolTipControl.resources
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\HydroDesktop.DataDownload.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\DataDownload.dll
+C:\hydrodesktop_7e935c516515\Source\DataDownload\DataDownload\obj\Debug\DataDownload.pdb
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\DataDownload\DataDownload.XML

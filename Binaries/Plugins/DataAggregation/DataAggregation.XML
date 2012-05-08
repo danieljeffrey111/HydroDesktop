@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataAggregation</name>
+    </assembly>
+    <members>
+        <member name="T:DataAggregation.AggregationMode">
+            <summary>
+            Aggregation mode for calculating data values.
+            </summary>
+        </member>
+        <member name="T:DataAggregation.Aggregator">
+            <summary>
+            Used for aggregating data values.
+            </summary>
+        </member>
+        <member name="M:DataAggregation.Aggregator.#ctor(DataAggregation.AggregationSettings,DotSpatial.Symbology.IFeatureLayer)">
+            <summary>
+            Create new instance of <see cref="T:DataAggregation.Aggregator"/>
+            </summary>
+            <param name="settings">Settings</param>
+            <param name="layer">Layer to update</param>
+            <exception cref="T:System.ArgumentNullException">Raises if <paramref name="settings"/> or <paramref name="layer"/> is null.</exception>
+        </member>
+        <member name="M:DataAggregation.Aggregator.Calculate">
+            <summary>
+            Perform aggregation using given settings
+            </summary>
+            <returns>Aggregation result</returns>
+        </member>
+        <member name="P:DataAggregation.Aggregator.ProgressHandler">
+            <summary>
+            Progress Handler
+            </summary>
+        </member>
+        <member name="T:DataAggregation.AggregationResult">
+            <summary>
+            Contains results of aggregation
+            </summary>
+        </member>
+        <member name="P:DataAggregation.AggregationResult.FeatureSet">
+            <summary>
+            Resulted FeatureSet
+            </summary>
+        </member>
+        <member name="P:DataAggregation.AggregationResult.ResultColumnName">
+            <summary>
+            Name of column, which contains aggregation values
+            </summary>
+        </member>
+        <member name="T:DataAggregation.DataAggregationPlugin">
+            <summary>
+            Allow to aggregate data in features layers
+            </summary>
+        </member>
+        <member name="T:DataAggregation.AggregationSettings">
+            <summary>
+            Contains settings for aggregation
+            </summary>
+        </member>
+        <member name="T:DataAggregation.AggregationSettingsDialog">
+            <summary>
+            Settings form for aggregation
+            </summary>
+        </member>
+        <member name="F:DataAggregation.AggregationSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataAggregation.AggregationSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataAggregation.AggregationSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataAggregation.AggregationSettingsDialog.#ctor(DotSpatial.Symbology.IFeatureLayer)">
+            <summary>
+            Create new instance of <see cref="T:DataAggregation.AggregationSettingsDialog"/>
+            </summary>
+            <param name="layer">Layer to aggregate</param>
+        </member>
+    </members>
+</doc>

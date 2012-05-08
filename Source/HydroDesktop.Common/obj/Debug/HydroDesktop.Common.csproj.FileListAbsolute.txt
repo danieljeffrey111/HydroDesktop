@@ -1,0 +1,10 @@
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Common.dll
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Common.pdb
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\HydroDesktop.Common.Controls.DelimiterSelector.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\HydroDesktop.Common.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\HydroDesktop.Common.dll
+C:\hydrodesktop_7e935c516515\Source\HydroDesktop.Common\obj\Debug\HydroDesktop.Common.pdb
+C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Common.XML

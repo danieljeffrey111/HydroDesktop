@@ -1,0 +1,984 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataImport</name>
+    </assembly>
+    <members>
+        <member name="T:DataImport.CommonPages.Progress.ProgressPage">
+            <summary>
+            Progress page
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.Progress.ProgressPage.#ctor(DataImport.WizardContext)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.Progress.ProgressPage"/>
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="F:DataImport.CommonPages.Progress.ProgressPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.Progress.ProgressPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.Progress.ProgressPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:DataImport.Txt.FormatOptionsPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.Txt.FormatOptionsPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.Txt.FormatOptionsPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataImport.Csv.FormatOptionsPage">
+            <summary>
+            Format options page for Csv
+            </summary>
+        </member>
+        <member name="F:DataImport.Csv.FormatOptionsPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.Csv.FormatOptionsPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.Csv.FormatOptionsPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.Csv.FormatOptionsPage.#ctor(DataImport.WizardContext)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.Csv.FormatOptionsPage"/>
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="T:DataImport.IImporter">
+            <summary>
+            Interface for importer
+            </summary>
+        </member>
+        <member name="M:DataImport.IImporter.Import(DataImport.IImporterSettings)">
+            <summary>
+            Import data using settings
+            </summary>
+            <param name="settings">Setting for import</param>
+            <returns>Imported series.</returns>
+        </member>
+        <member name="P:DataImport.IImporter.ProgressHandler">
+            <summary>
+            Progress handler
+            </summary>
+        </member>
+        <member name="T:DataImport.DataTableImport.ExistsSeriesQuestionDialog">
+            <summary>
+            Question dialog in case when series exists
+            </summary>
+        </member>
+        <member name="M:DataImport.DataTableImport.ExistsSeriesQuestionDialog.#ctor(System.String,System.String)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.DataTableImport.ExistsSeriesQuestionDialog"/>
+            </summary>
+            <param name="siteName">Site name</param>
+            <param name="varName">Variable name</param>
+        </member>
+        <member name="F:DataImport.DataTableImport.ExistsSeriesQuestionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.DataTableImport.ExistsSeriesQuestionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.DataTableImport.ExistsSeriesQuestionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:DataImport.DataTableImport.ExistsSeriesQuestionDialog.CurrentOption">
+            <summary>
+            Current Overwrite option
+            </summary>
+        </member>
+        <member name="T:DataImport.Excel.FormatOptionsPage">
+            <summary>
+            Format options page for Excel
+            </summary>
+        </member>
+        <member name="M:DataImport.Excel.FormatOptionsPage.#ctor(DataImport.WizardContext)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.Excel.FormatOptionsPage"/>
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="F:DataImport.Excel.FormatOptionsPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.Excel.FormatOptionsPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.Excel.FormatOptionsPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.VariableView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.Variable"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.VariableView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.VariableView"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.VariableView.EntityValidate">
+            <summary>
+            Validate Current Entity
+            </summary>
+            <returns>Error or string.Empty</returns>
+        </member>
+        <member name="F:DataImport.CommonPages.VariableView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.VariableView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.VariableView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.VariableView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.VariableView.ReadOnly">
+            <summary>
+            Gets or sets value indicating whether all editors is read-only.
+            </summary>
+        </member>
+        <member name="T:DataImport.Txt.TxtImportSettings">
+            <summary>
+            Settings for txt
+            </summary>
+        </member>
+        <member name="T:DataImport.IWizardImporterSettings">
+            <summary>
+            Wizard settings for data importer
+            </summary>
+        </member>
+        <member name="T:DataImport.IImporterSettings">
+            <summary>
+            Settings for data importer
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.PathToFile">
+            <summary>
+            Path to File
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.ColumnDatas">
+            <summary>
+            List of columns data
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.DateTimeColumn">
+            <summary>
+            Column with date time
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.Data">
+            <summary>
+            Data table with data to import
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.ValuesNumberDecimalSeparator">
+            <summary>
+            Gets or sets the string to use as a decimal separator when parsing values
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.MaxProgressPercentWhenImport">
+            <summary>
+            Gets or sets max progress percent when importing
+            </summary>
+        </member>
+        <member name="P:DataImport.IImporterSettings.SeriesSelector">
+            <summary>
+            Gets or sets SeriesSelector
+            </summary>
+        </member>
+        <member name="P:DataImport.IWizardImporterSettings.Preview">
+            <summary>
+            Data table with preview data
+            </summary>
+        </member>
+        <member name="P:DataImport.Txt.TxtImportSettings.FileType">
+            <summary>
+            File type
+            </summary>
+        </member>
+        <member name="P:DataImport.Txt.TxtImportSettings.Delimiter">
+            <summary>
+            Delimiter
+            </summary>
+        </member>
+        <member name="T:DataImport.IWizardImporter">
+            <summary>
+            Common interface for wizard importer
+            </summary>
+        </member>
+        <member name="M:DataImport.IWizardImporter.CanImportFromFile(System.String)">
+            <summary>
+            Get that file can be imported by current data importer.
+            </summary>
+            <param name="pathToFile">Path to file with data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataImport.IWizardImporter.GetDefaultSettings">
+            <summary>
+            Get default settings for current importer
+            </summary>
+            <returns>Default settings</returns>
+        </member>
+        <member name="M:DataImport.IWizardImporter.GetImporter">
+            <summary>
+            Get importer to import
+            </summary>
+            <returns>Importer</returns>
+        </member>
+        <member name="M:DataImport.IWizardImporter.UpdatePreview(DataImport.IWizardImporterSettings)">
+            <summary>
+            Set preview
+            </summary>
+            <param name="settings">Settings with preview</param>
+        </member>
+        <member name="M:DataImport.IWizardImporter.UpdateData(DataImport.IWizardImporterSettings)">
+            <summary>
+            Set data
+            </summary>
+            <param name="settings">Settings with data</param>
+        </member>
+        <member name="M:DataImport.IWizardImporter.GetWizardPages(DataImport.WizardContext)">
+            <summary>
+            Get wizard pages
+            </summary>
+            <param name="context">Wizards data context</param>
+            <returns>Collection of wizard pages</returns>
+        </member>
+        <member name="P:DataImport.IWizardImporter.Filter">
+            <summary>
+            Filter in open file dialog
+            </summary>
+        </member>
+        <member name="T:DataImport.Csv.CsvImportSettings">
+            <summary>
+            Setting for csv
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.OffsetTypeView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.OffsetType"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldProperties.OffsetTypeView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.OffsetTypeView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.OffsetTypeView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.OffsetTypeView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.OffsetTypeView"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.OffsetTypeView.EntityValidate">
+            <summary>
+            Validate Current Entity
+            </summary>
+            <returns>Error or string.Empty</returns>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldProperties.OffsetTypeView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="P:ImportFromWaterML.Main.SeriesControl">
+            <summary>
+            Series View
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.SourceView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.Source"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.SourceView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.SourceView"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.SourceView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.SourceView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.SourceView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.SourceView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.ImportSeriesWizard">
+            <summary>
+            Data Series Import Wizard
+            </summary>
+        </member>
+        <member name="M:DataImport.ImportSeriesWizard.#ctor(DataImport.WizardContext)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.ImportSeriesWizard"/>
+            </summary>
+            <param name="context">DataImporter</param>
+        </member>
+        <member name="T:DataImport.Excel.ExcelImportSettings">
+            <summary>
+            Settings for Excel
+            </summary>
+        </member>
+        <member name="P:DataImport.Excel.ExcelImportSettings.SheetName">
+            <summary>
+            Selected sheet name
+            </summary>
+        </member>
+        <member name="P:DataImport.Excel.ExcelImportSettings.DataSet">
+            <summary>
+            DataSet that contains all data from excel file
+            </summary>
+        </member>
+        <member name="T:DataImport.WizardContext">
+            <summary>
+            Context for wizards
+            </summary>
+        </member>
+        <member name="P:DataImport.WizardContext.Importer">
+            <summary>
+            Wizard importer
+            </summary>
+        </member>
+        <member name="P:DataImport.WizardContext.Settings">
+            <summary>
+            Wizard settings
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.CreateUnitForm">
+            <summary>
+            Allow to create new Unit
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.CreateUnitForm.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.CreateUnitForm"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldProperties.CreateUnitForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.CreateUnitForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.CreateUnitForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldProperties.CreateUnitForm.Entity">
+            <summary>
+            Gets or sets current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.SiteView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.Site"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.SiteView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.SiteView"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.SiteView.EntityValidate">
+            <summary>
+            Validate Current Entity
+            </summary>
+            <returns>Error or string.Empty</returns>
+        </member>
+        <member name="F:DataImport.CommonPages.SiteView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.SiteView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.SiteView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.SiteView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.SelectColumnForm">
+            <summary>
+            Form that allow to specify column to import
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldProperties.SelectColumnForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.SelectColumnForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.SelectColumnForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.SelectColumnForm.#ctor(System.Collections.Generic.IList{DataImport.ColumnInfo})">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.SelectColumnForm"/>
+            </summary>
+            <param name="columns">List of available columns</param>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldProperties.SelectColumnForm.SelectedItem">
+            <summary>
+            Selected column
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldPropertiesForm">
+            <summary>
+            Allow to modify properties of field to import
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldPropertiesForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesForm.#ctor(DataImport.ColumnInfo)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldPropertiesForm"/>
+            </summary>
+            <param name="columnData">Column data</param>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldPropertiesForm.ColumnData">
+            <summary>
+            Current column data
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.ColumnsToImportControl">
+            <summary>
+            Shows grid with columns to import
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.ColumnsToImportControl"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.SetDataSource(System.Collections.Generic.IList{DataImport.ColumnInfo})">
+            <summary>
+            Set data source (columns to import) to current control.
+            </summary>
+            <param name="columnInfos">List of columnInfo.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.RefreshData">
+            <summary>
+            Refresh data
+            </summary>
+        </member>
+        <member name="E:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.RemoveClick">
+            <summary>
+            Raised when "Remove" button was clicked.
+            </summary>
+        </member>
+        <member name="E:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.EditClick">
+            <summary>
+            Raised when "Edit..." button was clicked.
+            </summary>
+        </member>
+        <member name="E:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.AddClick">
+            <summary>
+            Raised when "Add..." button was clicked.
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.ColumnsToImportControl.ColumnInfoWrapper">
+            <summary>
+            This class need only for showing second-level properties in data grid view.
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.Complete.CompletePage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.Complete.CompletePage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.Complete.CompletePage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:DataImport.WaterML.OptionsPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.WaterML.OptionsPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.WaterML.OptionsPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.QualityControlLevelView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.QualityControlLevel"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.QualityControlLevelView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.QualityControlLevelView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.QualityControlLevelView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.QualityControlLevelView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.QualityControlLevelView"/>
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.QualityControlLevelView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.ColumnInfo">
+            <summary>
+            Contains info about column to import
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ImportColumn">
+            <summary>
+            Gets or sets value indicating that this column should be imported into database.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ColumnIndex">
+            <summary>
+            Gets or sets index of this column in the source data table.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ColumnName">
+            <summary>
+            Gets or sets name of this column in the source data table.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplySiteToAllColumns">
+            <summary>
+            Gets or sets value indicating that Site from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplyVariableToAllColumns">
+            <summary>
+            Gets or sets value indicating that Variable from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplySourceToAllColumns">
+            <summary>
+            Gets or sets value indicating that Source from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplyMethodToAllColumns">
+            <summary>
+            Gets or sets value indicating that Method from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplyQualityControlToAllColumns">
+            <summary>
+            Gets or sets value indicating that QualityControl from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.ApplyOffsetToAllColumns">
+            <summary>
+            Gets or sets value indicating that OffsetType and  OffsetValue from this column should be applied to all other columns.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.Site">
+            <summary>
+            Gets or sets Site for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.Variable">
+            <summary>
+            Gets or sets Variable for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.QualityControlLevel">
+            <summary>
+            Gets or sets QualityControlLevel for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.Method">
+            <summary>
+            Gets or sets Method for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.Source">
+            <summary>
+            Gets or sets Source for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.OffsetType">
+            <summary>
+            Gets or sets OffsetType for this column.
+            </summary>
+        </member>
+        <member name="P:DataImport.ColumnInfo.OffsetValue">
+            <summary>
+            Gets or sets OffsetValue for this column.
+            </summary>
+        </member>
+        <member name="T:DataImport.WaterML.WaterMLImportSettings">
+            <summary>
+            WaterML Import Settings
+            </summary>
+        </member>
+        <member name="P:DataImport.WaterML.WaterMLImportSettings.ThemeName">
+            <summary>
+            Theme name
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldPropertiesPage">
+            <summary>
+            Properties page
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesPage.#ctor(DataImport.WizardContext)">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldPropertiesPage"/>
+            </summary>
+            <param name="context">Context</param>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldPropertiesPage.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesPage.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldPropertiesPage.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ImportFromWaterML.Downloader">
+            <summary>
+            Methods to download observation data from WaterML web services and save them to 
+            the ActualData database.
+            </summary>
+        </member>
+        <member name="M:ImportFromWaterML.Downloader.GetXmlTempDirectory">
+            <summary>
+            Gets the temporary directory for xml files downloaded
+            by HydroDesktop
+            </summary>
+            <returns>the directory path</returns>
+        </member>
+        <member name="M:ImportFromWaterML.Downloader.DataSeriesFromXml(System.String)">
+            <summary>
+            Converts the xml file to a list of data series objects.
+            In most cases the list will only contain one object.
+            </summary>
+            <param name="xmlFile">The name of the xml file</param>
+            <returns>the data series list or null in case of error</returns>
+        </member>
+        <member name="M:ImportFromWaterML.Downloader.SaveDataSeries(HydroDesktop.Interfaces.ObjectModel.Series,System.String,System.String,System.String)">
+            <summary>
+            creates a new DataSeries from a xml file and saves it to database.
+            This function uses the underlying ORM (NHibernate) framework to
+            communicate with the database
+            </summary>
+            <param name="series">The data series to be saved</param>
+            <param name="theme">The theme associated with this data series</param>
+            <param name="overwrite">Determines how to handle duplicate data values.</param>
+            <returns>True if series was successfully saved.</returns>
+        </member>
+        <member name="T:DataImport.CommonPages.NumericUpDownEx">
+            <summary>
+            NumericUpDown with fixed ReadOnly behavior
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.NumericUpDownEx.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.NumericUpDownEx"/>
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.NumericUpDownEx.FullReadOnly">
+            <summary>
+            Gets or sets value indicating whether Value can be changed by the User
+            </summary>
+        </member>
+        <member name="T:DataImport.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DataImport.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DataImport.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.UnitView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.Unit"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.FieldProperties.UnitView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.UnitView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.UnitView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.UnitView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.UnitView"/>
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.UnitView.EntityValidate">
+            <summary>
+            Validate Current Entity
+            </summary>
+            <returns>Error or string.Empty</returns>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldProperties.UnitView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.MethodView">
+            <summary>
+            View of <see cref="T:HydroDesktop.Interfaces.ObjectModel.Method"/>
+            </summary>
+        </member>
+        <member name="F:DataImport.CommonPages.MethodView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.MethodView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DataImport.CommonPages.MethodView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.MethodView.#ctor">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.MethodView"/>
+            </summary>
+        </member>
+        <member name="P:DataImport.CommonPages.MethodView.Entity">
+            <summary>
+            Current Entity
+            </summary>
+        </member>
+        <member name="T:DataImport.CommonPages.FieldProperties.ColumnsToProcessEventArgs">
+            <summary>
+            Contains info about columns to process
+            </summary>
+        </member>
+        <member name="M:DataImport.CommonPages.FieldProperties.ColumnsToProcessEventArgs.#ctor(System.Collections.Generic.IList{DataImport.ColumnInfo})">
+            <summary>
+            Create new instance of <see cref="T:DataImport.CommonPages.FieldProperties.ColumnsToProcessEventArgs"/>
+            </summary>
+            <param name="columnInfos">List of columns to process</param>
+        </member>
+        <member name="P:DataImport.CommonPages.FieldProperties.ColumnsToProcessEventArgs.Columns">
+            <summary>
+            Columns to process
+            </summary>
+        </member>
+        <member name="T:DataImport.Txt.TxtFileType">
+            <summary>
+            Txt file type
+            </summary>
+        </member>
+        <member name="F:DataImport.Txt.TxtFileType.FixedWidth">
+            <summary>
+            Fixed width
+            </summary>
+        </member>
+        <member name="F:DataImport.Txt.TxtFileType.Delimited">
+            <summary>
+            Delimited
+            </summary>
+        </member>
+    </members>
+</doc>
