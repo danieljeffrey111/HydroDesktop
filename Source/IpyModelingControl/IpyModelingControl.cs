@@ -383,7 +383,7 @@ namespace IPyModelingControl
         }
 		
 		//This button runs or cancels the modeling method associated with this pane.
-        protected void btnRun_Click(object sender, EventArgs e)
+        public void btnRun_Click(object sender, EventArgs e)
         {
             //Now this modeling tab has been touched.
             boolVirgin = false;
@@ -654,7 +654,7 @@ namespace IPyModelingControl
 		
 
         //Handle a click of the modeling "Go" button
-        protected void btnSelectModel_Click(object sender, EventArgs e)
+        public void btnSelectModel_Click(object sender, EventArgs e)
         {
             if (ModelSaveRequested != null)
             {

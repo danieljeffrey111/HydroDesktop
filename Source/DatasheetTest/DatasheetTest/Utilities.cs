@@ -8,7 +8,7 @@ using Microsoft.VisualBasic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     /// <summary>
     /// class contains a number of useful methods applicable to datatable and datagridview

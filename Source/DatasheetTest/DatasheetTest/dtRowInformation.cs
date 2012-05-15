@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     /// <summary>
     /// class to carry datatable row enable/disable information

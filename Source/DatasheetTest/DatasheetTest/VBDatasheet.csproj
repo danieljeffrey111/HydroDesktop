@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{58500DA9-66D3-4B69-86D4-E1BD43ED10B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VBDatasheet</RootNamespace>
+    <AssemblyName>VBDatasheet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\hydrodesktop_7e935c516515\Binaries\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotSpatial.Controls">
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\DotSpatial.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data, Version=0.11.9.6, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\DotSpatial.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data.Forms, Version=0.11.9.6, Culture=neutral, PublicKeyToken=53ab5a198378d4c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\DotSpatial.Data.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions">
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\DotSpatial.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Configuration">
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Data, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\HydroDesktop.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Interfaces">
+      <HintPath>C:\hydrodesktop_7e935c516515\Binaries\HydroDesktop.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="LogUtilities">
+      <HintPath>C:\bin\debug\LogUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBStatistics">
+      <HintPath>..\..\..\..\VB\bin\debug\VBStatistics.dll</HintPath>
+    </Reference>
+    <Reference Include="VBTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\VB\bin\debug\VBTools.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\..\VB\bin\debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>C:\VB\SupportProjects\zedgraph\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridViewPrinter.cs" />
+    <Compile Include="DatasheetPlugIn.cs" />
+    <Compile Include="dtColumnInformation.cs" />
+    <Compile Include="dtRowInformation.cs" />
+    <Compile Include="ExpressionBuilder.cs" />
+    <Compile Include="ExpressionExecution.cs" />
+    <Compile Include="frmDatasheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmDatasheet.Designer.cs">
+      <DependentUpon>frmDatasheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMissingValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMissingValues.designer.cs">
+      <DependentUpon>frmMissingValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlot.Designer.cs">
+      <DependentUpon>frmPlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPowerExponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPowerExponent.Designer.cs">
+      <DependentUpon>frmPowerExponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVariableSpecification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVariableSpecification.designer.cs">
+      <DependentUpon>frmVariableSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmDatasheet.resx">
+      <DependentUpon>frmDatasheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMissingValues.resx">
+      <DependentUpon>frmMissingValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlot.resx">
+      <DependentUpon>frmPlot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPowerExponent.resx">
+      <DependentUpon>frmPowerExponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVariableSpecification.resx">
+      <DependentUpon>frmVariableSpecification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendSelectedSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendAllSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditView_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interpolate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendLine.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

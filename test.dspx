@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-16"?>
+<root type="0">
+  <types>
+    <item key="0" value="System.Object[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="1" value="System.String[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="2" value="DotSpatial.Controls.Map, DotSpatial.Controls, Version=0.11.9.6, Culture=neutral, PublicKeyToken=4d9e49339a7d240c" />
+    <item key="3" value="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="4" value="DotSpatial.Controls.MapFrame, DotSpatial.Controls, Version=0.11.9.6, Culture=neutral, PublicKeyToken=4d9e49339a7d240c" />
+    <item key="5" value="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="6" value="DotSpatial.Data.Extent, DotSpatial.Data, Version=0.11.9.6, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d" />
+    <item key="7" value="System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="8" value="DotSpatial.Controls.MapLayerCollection, DotSpatial.Controls, Version=0.11.9.6, Culture=neutral, PublicKeyToken=4d9e49339a7d240c" />
+    <item key="9" value="System.Collections.Generic.List`1[[DotSpatial.Symbology.ILayer, DotSpatial.Symbology, Version=0.11.9.6, Culture=neutral, PublicKeyToken=6178c08da7998387]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <item key="10" value="DotSpatial.Controls.MapGroup, DotSpatial.Controls, Version=0.11.9.6, Culture=neutral, PublicKeyToken=4d9e49339a7d240c" />
+    <item key="11" value="DotSpatial.Symbology.DynamicVisibilityMode, DotSpatial.Symbology, Version=0.11.9.6, Culture=neutral, PublicKeyToken=6178c08da7998387" />
+    <item key="12" value="System.Collections.Generic.Dictionary`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </types>
+  <item type="1" />
+  <item type="2">
+    <member name="ProjectionEsriString" type="3" value="PROJCS[&amp;quot;WGS_1984_Web_Mercator_Auxiliary_Sphere&amp;quot;,GEOGCS[&amp;quot;GCS_WGS_1984&amp;quot;,DATUM[&amp;quot;D_WGS_1984&amp;quot;,SPHEROID[&amp;quot;WGS_1984&amp;quot;,6378137,298.257223562997]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]], PROJECTION[&amp;quot;Mercator_Auxiliary_Sphere&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,0],PARAMETER[&amp;quot;Standard_Parallel_1&amp;quot;,0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,1],PARAMETER[&amp;quot;Auxiliary_Sphere_Type&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1]]" />
+    <member name="MapFrame" type="4">
+      <member name="IsLegendGroup" type="5" value="False" />
+      <member name="ExtentsInitialized" type="5" value="True" />
+      <member name="ViewExtents" type="6">
+        <member name="MaxX" type="7" value="-3677329.04949178" />
+        <member name="MaxY" type="7" value="9710170.07777555" />
+        <member name="MinX" type="7" value="-18586569.1091629" />
+        <member name="MinY" type="7" value="-753126.930682612" />
+      </member>
+      <member name="ExtendBuffer" type="5" value="False" />
+      <member name="Layers" type="8">
+        <member name="InnerList" type="9">
+          <item type="10">
+            <member name="IsLegendGroup" type="5" value="False" />
+            <member name="Layers" type="8">
+              <member name="InnerList" type="9" />
+            </member>
+            <member name="DynamicVisibilityWidth" type="7" value="0" />
+            <member name="DynamicVisibilityMode" type="11" value="ZoomedIn" />
+            <member name="UseDynamicVisibility" type="5" value="False" />
+            <member name="LegendText" type="3" value="Base Map Data" />
+          </item>
+        </member>
+      </member>
+      <member name="DynamicVisibilityWidth" type="7" value="0" />
+      <member name="DynamicVisibilityMode" type="11" value="ZoomedIn" />
+      <member name="UseDynamicVisibility" type="5" value="False" />
+      <member name="LegendText" type="3" value="Map Layers" />
+    </member>
+  </item>
+  <item type="12" />
+</root>

@@ -1,0 +1,13 @@
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.frmDatasheet.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.frmMissingValues.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.frmPlot.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.frmPowerExponent.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.frmVariableSpecification.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\VBDatasheet.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\VBDatasheet.pdb
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.dll
+C:\hydrodesktop_7e935c516515\Source\DatasheetTest\DatasheetTest\obj\Debug\VBDatasheet.pdb

@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using VBTools;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     public partial class frmPowerExponent : Form
     {

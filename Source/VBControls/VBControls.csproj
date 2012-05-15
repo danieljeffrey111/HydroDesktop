@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F2D6730-6FD3-4A3F-98FC-C5898FCFA12E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VBControls</RootNamespace>
+    <AssemblyName>VBControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\..\VB\SupportProjects\zedgraph\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dtColumnInformation.cs" />
+    <Compile Include="dtRowInformation.cs" />
+    <Compile Include="frmBadCellsRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBadCellsRpt.designer.cs">
+      <DependentUpon>frmBadCellsRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMissingValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMissingValues.designer.cs">
+      <DependentUpon>frmMissingValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVariableSpecification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVariableSpecification.designer.cs">
+      <DependentUpon>frmVariableSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MLRPredObs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MLRPredObs.Designer.cs">
+      <DependentUpon>MLRPredObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBadCellsRpt.resx">
+      <DependentUpon>frmBadCellsRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMissingValues.resx">
+      <DependentUpon>frmMissingValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVariableSpecification.resx">
+      <DependentUpon>frmVariableSpecification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MLRPredObs.resx">
+      <DependentUpon>MLRPredObs.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VBStatistics\VBStatistics.csproj">
+      <Project>{76237650-4E1E-40B0-89FC-98BF7599CBAF}</Project>
+      <Name>VBStatistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\RAE1Data\VBTools\VBTools\VBTools.csproj">
+      <Project>{3F5ED9FC-B22D-4133-981D-897DDD15D823}</Project>
+      <Name>VBTools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

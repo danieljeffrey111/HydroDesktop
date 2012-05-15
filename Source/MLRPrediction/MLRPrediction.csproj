@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13B5B93B-EA91-491D-A423-8D89C5838EBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLRPrediction</RootNamespace>
+    <AssemblyName>MLRPrediction</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Binaries\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\debug\MLRPrediction.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\bin\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\bin\release\MLRPrediction.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ciloci.Flee">
+      <HintPath>..\..\..\VB\SupportProjects\FLEE\src\Lib\bin\Debug\Ciloci.Flee.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Controls">
+      <HintPath>..\..\Binaries\DotSpatial.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions">
+      <HintPath>..\..\Binaries\DotSpatial.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Configuration">
+      <HintPath>..\..\Binaries\HydroDesktop.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="HydroDesktop.Interfaces">
+      <HintPath>..\..\Binaries\HydroDesktop.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBControls">
+      <HintPath>..\..\..\VB\bin\debug\VBControls.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\VB\bin\debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\..\VB\SupportProjects\zedgraph\zedgraph_dll_v515\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmIPyPrediction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIPyPrediction.Designer.cs">
+      <DependentUpon>frmIPyPrediction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomFunctions.cs" />
+    <Compile Include="ExpressionEvaluator.cs" />
+    <Compile Include="frmColumnMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColumnMapper.Designer.cs">
+      <DependentUpon>frmColumnMapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMLRPredObs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMLRPredObs.Designer.cs">
+      <DependentUpon>frmMLRPredObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPowerExponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPowerExponent.designer.cs">
+      <DependentUpon>frmPowerExponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPypredictionPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Support.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmIPyPrediction.resx">
+      <DependentUpon>frmIPyPrediction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColumnMapper.resx">
+      <DependentUpon>frmColumnMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMLRPredObs.resx">
+      <DependentUpon>frmMLRPredObs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPowerExponent.resx">
+      <DependentUpon>frmPowerExponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatasheetTest\DatasheetTest\VBDatasheet.csproj">
+      <Project>{58500DA9-66D3-4B69-86D4-E1BD43ED10B1}</Project>
+      <Name>VBDatasheet</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IpyModelingControl\IpyModelingControl.csproj">
+      <Project>{ADE70E49-1CEB-4526-A7BB-D8A99246D718}</Project>
+      <Name>IpyModelingControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IpyModeling\IpyModeling\IpyModeling\IPyModeling.csproj">
+      <Project>{6BF34EC4-522C-4B55-8517-E8B02E2A3B04}</Project>
+      <Name>IPyModeling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VBStatistics\VBStatistics.csproj">
+      <Project>{76237650-4E1E-40B0-89FC-98BF7599CBAF}</Project>
+      <Name>VBStatistics</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="D:\RAE1Data\VBTools\VBTools\VBTools.csproj">
+      <Project>{3F5ED9FC-B22D-4133-981D-897DDD15D823}</Project>
+      <Name>VBTools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExportAsCSV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportIVs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportOBs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IVDataVal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MakePred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plot.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

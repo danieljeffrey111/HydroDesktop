@@ -1,0 +1,50 @@
+C:\vs projects\VB-mlr\bin\debug\frmMLRPredPlot.resx
+C:\vs projects\VB-mlr\bin\debug\frmMLRPredPlot.cs
+C:\vs projects\VB-mlr\bin\debug\frmMLRPredPlot.designer.cs
+C:\vs projects\VB-mlr\bin\debug\MLRPrediction.dll
+C:\vs projects\VB-mlr\bin\debug\MLRPrediction.pdb
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmColumnMapper.resources
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPrediction.resources
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredPlot.resources
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.dll
+C:\vs projects\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.pdb
+C:\VB-mlr\bin\debug\MLRPrediction.dll
+C:\VB-mlr\bin\debug\MLRPrediction.pdb
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmColumnMapper.resources
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPrediction.resources
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredObs.resources
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredPlot.resources
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.frmPowerExponent.resources
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.dll
+C:\VB-mlr\MLRPrediction\obj\x86\Debug\MLRPrediction.pdb
+C:\VB\MLRPrediction\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmIPyPrediction.resources
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmColumnMapper.resources
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPrediction.resources
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredObs.resources
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredPlot.resources
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.frmPowerExponent.resources
+C:\VB\MLRPrediction\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\VB\MLRPrediction\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\VB\bin\debug\MLRPrediction.dll
+C:\VB\bin\debug\MLRPrediction.pdb
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.dll
+C:\VB\MLRPrediction\obj\x86\Debug\MLRPrediction.pdb
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.frmIPyPrediction.resources
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.frmColumnMapper.resources
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.frmMLRPredObs.resources
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.frmPowerExponent.resources
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\MLRPrediction.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\MLRPrediction.pdb
+C:\hydrodesktop_7e935c516515\Source\MLRPrediction\obj\x86\Debug\MLRPrediction.pdb

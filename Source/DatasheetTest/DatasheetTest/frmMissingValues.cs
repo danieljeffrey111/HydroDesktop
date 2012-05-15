@@ -10,7 +10,7 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using VBTools;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     /// <summary>
     /// Class provides a mechanism to validate imported datasets.

@@ -10,8 +10,9 @@ using HydroDesktop.Configuration;
 using System.ComponentModel.Composition;
 using DotSpatial.Controls.Header;
 using DotSpatial.Controls.Docking;
+using Newtonsoft.Json;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     public class DatasheetPlugIn : Extension
     { 
@@ -87,7 +88,7 @@ namespace DatasheetTest
         void AddDatasheetRibbon()
         {
             _DatasheetTab = new RootItem(kDataSheet, _panelName);
-            _DatasheetTab.SortOrder = 120;
+            _DatasheetTab.SortOrder = 80;
             App.HeaderControl.Add(_DatasheetTab);
             
 
@@ -157,11 +158,11 @@ namespace DatasheetTest
         
         void SerializationManager_Serializing(object sender, SerializingEventArgs e)
         {
+            //_frmDatasheet.ProjectSavedListener();
             //throw new NotImplementedException();
         }
         void SerializationManager_Deserializing(object sender, SerializingEventArgs e)
         {
-            //btnValidate.Enabled = true;
             //string customSettingValue = App.SerializationManager.GetCustomSetting<string>(_pluginName + "_Setting1", "enter custom setting:");
             //throw new NotImplementedException();
         }

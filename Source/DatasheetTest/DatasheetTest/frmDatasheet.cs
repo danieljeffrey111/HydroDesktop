@@ -12,8 +12,9 @@ using HydroDesktop.Interfaces;
 using WeifenLuo.WinFormsUI.Docking;
 using VBTools;
 using Microsoft.VisualBasic;
+using Newtonsoft.Json;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
 
     public partial class frmDatasheet : UserControl
@@ -64,6 +65,7 @@ namespace DatasheetTest
         private bool _validated = false;
         public event EventHandler ResetProject;
         
+
         public DataTable DT
         {
             get { return _dt; }
@@ -78,8 +80,10 @@ namespace DatasheetTest
             //_projMgr.ProjectSaved += new VBProjectManager.ProjectSavedHandler(packState);
             _projMgr.ProjectOpened += new VBProjectManager.ProjectOpenedHandler(ProjectOpenedListener);
             _projMgr.ProjectSaved += new VBProjectManager.ProjectSavedHandler<PackEventArgs>(ProjectSavedListener);
-         
+                      
+
         }
+
 
         private void ProjectOpenedListener()
         {
@@ -148,7 +152,7 @@ namespace DatasheetTest
 
         }
 
-        private void ProjectSavedListener(object sender, PackEventArgs e)
+        public void ProjectSavedListener(object sender, PackEventArgs e)
         {
             DataSheetInfo localDataSheetInfo = new DataSheetInfo();
             //Something must be seriously messed up if this happens.
@@ -179,6 +183,8 @@ namespace DatasheetTest
 
             }
             e.DictPacked.Add("frmDatasheet", localDataSheetInfo);
+            
+        
         }
 
         /// <summary>
@@ -1476,6 +1482,7 @@ namespace DatasheetTest
             {
                 _projMgr._comms.sendMessage("Show", this);
             }
+
         } //then would go to MainForm MessageSentListener(message, senderForm) to show other forms
 
         /// <summary>

@@ -59,5 +59,19 @@ namespace IpyModelingControl.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap GoToPrediction {
+            get {
+                object obj = ResourceManager.GetObject("GoToPrediction", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Run {
+            get {
+                object obj = ResourceManager.GetObject("Run", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

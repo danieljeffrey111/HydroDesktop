@@ -23,3 +23,9 @@ C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IPyModeling
 C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IpyModelingControl.pdb
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IpyModelingControl.Properties.Resources.resources
+C:\hydrodesktop_7e935c516515\bin\debug\IpyModelingControl.dll
+C:\hydrodesktop_7e935c516515\bin\debug\IpyModelingControl.pdb
+C:\hydrodesktop_7e935c516515\Source\IpyModelingControl\obj\x86\Debug\IpyModelingControl.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\IpyModelingControl.dll
+C:\hydrodesktop_7e935c516515\Binaries\Plugins\IpyModelingControl.pdb

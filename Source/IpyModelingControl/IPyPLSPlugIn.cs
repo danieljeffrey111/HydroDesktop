@@ -7,6 +7,7 @@ using System.Drawing;
 using DotSpatial.Controls;
 using HydroDesktop.Interfaces;
 using HydroDesktop.Configuration;
+using HydroDesktop.Database;
 using System.ComponentModel.Composition;
 using DotSpatial.Controls.Header;
 using DotSpatial.Controls.Docking;
@@ -15,7 +16,7 @@ namespace IpyModelingControl
 {
     public class IPyPLSPlugIn : Extension
     {
-        private IPyModelingControl.IPyPLSControl _IPyPLS;
+        
 
         [Import("Shell")]
         private ContainerControl Shell { get; set; }
@@ -27,9 +28,11 @@ namespace IpyModelingControl
         private const string kPLSModel = "kPLSModel";
 
         private RootItem _PLSModelTab;
+
         private SimpleActionItem btnRun;
         private SimpleActionItem btnGoToPred;
 
+        private IPyModelingControl.IPyPLSControl _IPyPLS;
 
         public override void Deactivate()
         {
@@ -39,6 +42,7 @@ namespace IpyModelingControl
             //remove plugin panel
             App.DockManager.Remove(kPLSModel);
 
+            
             _IPyPLS = null;
 
             //this line to ensure "enabled is set to false
@@ -83,69 +87,35 @@ namespace IpyModelingControl
         void AddIPyPLSRibbon()
         {
             _PLSModelTab = new RootItem(kPLSModel, _panelName);
-            _PLSModelTab.SortOrder = 120;
+            _PLSModelTab.SortOrder = 100;
             App.HeaderControl.Add(_PLSModelTab);
 
 
 
             //add sub-ribbons
             //section for adding data
-            const string tGroupCaption = "";
+            const string rGroupCaption = _panelName;
 
-            btnRun = new SimpleActionItem(kPLSModel, "Run", btnImport_Click);
-            btnRun.LargeImage = Properties.Resources.OpenFile;
-            btnRun.GroupCaption = tGroupCaption;
+            btnRun = new SimpleActionItem(kPLSModel, "Run", btnRunn_Click);
+            btnRun.LargeImage = Properties.Resources.Run;
+            btnRun.GroupCaption = rGroupCaption;
             btnRun.Enabled = true;
             App.HeaderControl.Add(btnRun);
 
 
 
-            //section for validating
-            const string grpValidate = "Validate";
-
-            btnValidate = new SimpleActionItem(kPLSModel, "Validate Data", btnValidate_Click);
-            btnValidate.LargeImage = Properties.Resources.Validate;
-            btnValidate.GroupCaption = grpValidate;
-            btnValidate.Enabled = false;
-            App.HeaderControl.Add(btnValidate);
-
-
-            //section for working with data
-            const string grpManipulate = "Work with Data";
-
-            btnComputeAO = new SimpleActionItem(kDataSheet, "Compute A O", _frmDatasheet.btnComputeAO_Click);
-            btnComputeAO.LargeImage = Properties.Resources.Compute;
-            btnComputeAO.GroupCaption = grpManipulate;
-            btnComputeAO.Enabled = false;
-            App.HeaderControl.Add(btnComputeAO);
-
-
-            btnManipulate = new SimpleActionItem(kDataSheet, "Manipulate", _frmDatasheet.btnManipulate_Click);
-            btnManipulate.LargeImage = Properties.Resources.Manipulate;
-            btnManipulate.GroupCaption = grpManipulate;
-            btnManipulate.Enabled = false;
-            App.HeaderControl.Add(btnManipulate);
-
-
-            btnTransform = new SimpleActionItem(kDataSheet, "Transform", _frmDatasheet.btnTransform_Click);
-            btnTransform.LargeImage = Properties.Resources.Transform;
-            btnTransform.GroupCaption = grpManipulate;
-            btnTransform.Enabled = false;
-            App.HeaderControl.Add(btnTransform);
-
-
-            btnGoToModeling = new SimpleActionItem(kDataSheet, "Go To Model", _frmDatasheet.btnGoToModeling_Click);
-            btnGoToModeling.LargeImage = Properties.Resources.GoToModeling;
-            btnGoToModeling.GroupCaption = grpManipulate;
-            btnGoToModeling.Enabled = false;
-            App.HeaderControl.Add(btnGoToModeling);
+            btnGoToPred = new SimpleActionItem(kPLSModel, "Go To Prediction", _IPyPLS.btnSelectModel_Click);
+            btnGoToPred.LargeImage = Properties.Resources.GoToPrediction;
+            btnGoToPred.GroupCaption = rGroupCaption;
+            btnGoToPred.Enabled = false;
+            App.HeaderControl.Add(btnGoToPred);
 
         }
 
         void AddIPyPLSPanel()
         {
-            var dp = new DockablePanel(kPLSModel, _panelName, _frmDatasheet, DockStyle.Fill);
-            dp.DefaultSortOrder = 200;
+            var dp = new DockablePanel(kPLSModel, _panelName, _IPyPLS, DockStyle.Fill);
+            dp.DefaultSortOrder = 60;
             App.DockManager.Add(dp);
         }
 
@@ -153,6 +123,8 @@ namespace IpyModelingControl
 
         void SerializationManager_Serializing(object sender, SerializingEventArgs e)
         {
+            //go to packProject
+            //_IPyPLS.PackProjectState();
             //throw new NotImplementedException();
         }
         void SerializationManager_Deserializing(object sender, SerializingEventArgs e)
@@ -185,21 +157,13 @@ namespace IpyModelingControl
             }
         }
 
-        void btnImport_Click(object sender, EventArgs e)
+        void btnRunn_Click(object sender, EventArgs e)
         {
-            _frmDatasheet.btnImportData_Click(sender, e);
-            btnValidate.Enabled = true;
+            _IPyPLS.btnRun_Click(sender, e);
+            btnGoToPred.Enabled = true;
 
         }
 
-        void btnValidate_Click(object sender, EventArgs e)
-        {
-            _frmDatasheet.btnValidateData_Click(sender, e);
-            btnComputeAO.Enabled = true;
-            btnManipulate.Enabled = true;
-            btnTransform.Enabled = true;
-            btnGoToModeling.Enabled = true;
-
-        }
+        
     }
 }

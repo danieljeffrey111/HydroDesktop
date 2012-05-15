@@ -12,7 +12,7 @@ using ZedGraph;
 using VBTools;
 using VBStatistics;
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     /// class to show plots of user selected datatable column.
     /// plots (all except frequency plot) are point enable/disable active

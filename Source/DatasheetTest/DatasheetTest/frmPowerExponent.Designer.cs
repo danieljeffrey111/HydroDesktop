@@ -1,4 +1,4 @@
-﻿namespace DatasheetTest
+﻿namespace VBDatasheet
 {
     partial class frmPowerExponent
     {

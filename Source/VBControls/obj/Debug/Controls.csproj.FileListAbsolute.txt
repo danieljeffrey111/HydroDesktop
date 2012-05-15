@@ -1,0 +1,8 @@
+G:\VirtualBeach2.0\bin\debug\Controls.dll
+G:\VirtualBeach2.0\bin\debug\Controls.pdb
+G:\VirtualBeach2.0\Controls\obj\Debug\ResolveAssemblyReference.cache
+G:\VirtualBeach2.0\Controls\obj\Debug\Controls.MLRPredObs.resources
+G:\VirtualBeach2.0\Controls\obj\Debug\GenerateResource.read.1.tlog
+G:\VirtualBeach2.0\Controls\obj\Debug\GenerateResource.write.1.tlog
+G:\VirtualBeach2.0\Controls\obj\Debug\Controls.dll
+G:\VirtualBeach2.0\Controls\obj\Debug\Controls.pdb

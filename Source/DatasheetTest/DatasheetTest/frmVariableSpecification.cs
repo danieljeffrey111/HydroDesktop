@@ -14,7 +14,7 @@ using VBTools;
 using Microsoft.VisualBasic;
 
 
-namespace DatasheetTest
+namespace VBDatasheet
 {
     /// <summary>
     /// Class provides a simplified variable specification mechanism to allow users

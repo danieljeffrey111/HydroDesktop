@@ -43,9 +43,14 @@
             this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnSelectModel
+            // 
+            this.btnSelectModel.Visible = false;
+            // 
             // btnRun
             // 
             this.btnRun.Location = new System.Drawing.Point(265, 159);
+            this.btnRun.Visible = false;
             // 
             // lvModel
             // 
